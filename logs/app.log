@@ -1,0 +1,421 @@
+2024-09-21T14:27:17.048Z [INFO]: Application has started.
+2024-09-21T14:27:17.050Z [WARNING]: The memory usage is high.
+2024-09-21T14:27:17.051Z [ERROR]: Failed to connect to the database.
+2024-09-21T14:28:48.619Z [INFO]: Application has started.
+2024-09-21T14:28:48.620Z [WARNING]: The memory usage is high.
+2024-09-21T14:28:48.620Z [ERROR]: Failed to connect to the database.
+2024-09-21T14:29:07.244Z [INFO]: Application has started.
+2024-09-21T14:29:07.244Z [WARNING]: The memory usage is high.
+2024-09-21T14:29:07.245Z [ERROR]: Failed to connect to the database.
+2024-09-21T14:29:26.936Z [WARNING]: The memory usage is high.
+2024-09-21T14:29:26.937Z [ERROR]: Failed to connect to the database.
+2024-09-21T14:29:26.940Z [INFO]: Application has started.
+2024-09-21T15:24:58.537Z [WARNING]: The memory usage is high.
+2024-09-21T15:24:58.538Z [ERROR]: Failed to connect to the database.
+2024-09-21T15:24:58.543Z [INFO]: Application has started.
+2024-09-22T07:57:52.661Z [WARNING]: The memory usage is high.
+2024-09-22T07:57:52.663Z [ERROR]: Failed to connect to the database.
+2024-09-22T07:57:52.669Z [INFO]: Application has started.
+2024-09-22T07:58:07.696Z [WARNING]: The memory usage is high.
+2024-09-22T07:58:07.697Z [ERROR]: Failed to connect to the database.
+2024-09-22T07:58:14.871Z [WARNING]: The memory usage is high.
+2024-09-22T07:58:14.872Z [ERROR]: Failed to connect to the database.
+2024-09-22T07:58:29.770Z [WARNING]: The memory usage is high.
+2024-09-22T07:58:29.772Z [ERROR]: Failed to connect to the database.
+2024-09-22T07:58:59.483Z [WARNING]: The memory usage is high.
+2024-09-22T07:58:59.484Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:00:53.190Z [WARNING]: The memory usage is high.
+2024-09-22T08:00:53.192Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:00:53.200Z [INFO]: Application has started.
+2024-09-22T08:08:52.246Z [WARNING]: The memory usage is high.
+2024-09-22T08:08:52.247Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:08:52.259Z [INFO]: Application has started.
+2024-09-22T08:09:05.784Z [WARNING]: The memory usage is high.
+2024-09-22T08:09:05.786Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:09:05.795Z [INFO]: Application has started.
+2024-09-22T08:11:13.831Z [WARNING]: The memory usage is high.
+2024-09-22T08:11:13.832Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:11:13.841Z [INFO]: Application has started.
+2024-09-22T08:13:34.080Z [WARNING]: The memory usage is high.
+2024-09-22T08:13:34.081Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:13:34.089Z [INFO]: Application has started.
+2024-09-22T08:24:19.454Z [WARNING]: The memory usage is high.
+2024-09-22T08:24:19.455Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:24:19.463Z [INFO]: Application has started.
+2024-09-22T08:24:40.369Z [WARNING]: The memory usage is high.
+2024-09-22T08:24:40.370Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:24:59.721Z [WARNING]: The memory usage is high.
+2024-09-22T08:24:59.722Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:36:37.447Z [WARNING]: The memory usage is high.
+2024-09-22T08:36:37.448Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:38:43.222Z [WARNING]: The memory usage is high.
+2024-09-22T08:38:43.223Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:38:43.227Z [INFO]: Application has started.
+2024-09-22T08:39:06.361Z [WARNING]: The memory usage is high.
+2024-09-22T08:39:06.362Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:39:06.367Z [INFO]: Application has started.
+2024-09-22T08:39:41.030Z [WARNING]: The memory usage is high.
+2024-09-22T08:39:41.030Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:39:41.036Z [INFO]: Application has started.
+2024-09-22T08:47:11.007Z [WARNING]: The memory usage is high.
+2024-09-22T08:47:11.007Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:47:11.011Z [INFO]: Application has started.
+2024-09-22T08:47:35.915Z [WARNING]: The memory usage is high.
+2024-09-22T08:47:35.916Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:47:35.921Z [INFO]: Application has started.
+2024-09-22T08:48:04.558Z [WARNING]: The memory usage is high.
+2024-09-22T08:48:04.559Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:48:04.568Z [INFO]: Application has started.
+2024-09-22T08:50:39.561Z [WARNING]: The memory usage is high.
+2024-09-22T08:50:39.561Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:50:39.566Z [INFO]: Application has started.
+2024-09-22T08:50:44.834Z [WARNING]: The memory usage is high.
+2024-09-22T08:50:44.835Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:50:44.839Z [INFO]: Application has started.
+2024-09-22T08:51:45.365Z [WARNING]: The memory usage is high.
+2024-09-22T08:51:45.366Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:51:45.372Z [INFO]: Application has started.
+2024-09-22T08:54:06.082Z [WARNING]: The memory usage is high.
+2024-09-22T08:54:06.083Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:54:06.089Z [INFO]: Application has started.
+2024-09-22T08:54:09.392Z [WARNING]: The memory usage is high.
+2024-09-22T08:54:09.393Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:54:09.398Z [INFO]: Application has started.
+2024-09-22T08:54:36.054Z [WARNING]: The memory usage is high.
+2024-09-22T08:54:36.054Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:54:36.058Z [INFO]: Application has started.
+2024-09-22T08:54:47.647Z [WARNING]: The memory usage is high.
+2024-09-22T08:54:47.648Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:54:47.652Z [INFO]: Application has started.
+2024-09-22T08:56:09.051Z [WARNING]: The memory usage is high.
+2024-09-22T08:56:09.052Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:56:09.056Z [INFO]: Application has started.
+2024-09-22T08:57:47.748Z [WARNING]: The memory usage is high.
+2024-09-22T08:57:47.749Z [ERROR]: Failed to connect to the database.
+2024-09-22T08:57:47.752Z [INFO]: Application has started.
+2024-09-22T09:12:52.622Z [WARNING]: The memory usage is high.
+2024-09-22T09:12:52.622Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:12:52.625Z [INFO]: Application has started.
+2024-09-22T09:12:57.364Z [WARNING]: The memory usage is high.
+2024-09-22T09:12:57.365Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:12:57.368Z [INFO]: Application has started.
+2024-09-22T09:16:14.597Z [WARNING]: The memory usage is high.
+2024-09-22T09:16:14.598Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:16:14.601Z [INFO]: Application has started.
+2024-09-22T09:17:47.018Z [WARNING]: The memory usage is high.
+2024-09-22T09:17:47.019Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:17:47.023Z [INFO]: Application has started.
+2024-09-22T09:21:30.463Z [WARNING]: The memory usage is high.
+2024-09-22T09:21:30.463Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:21:30.466Z [INFO]: Application has started.
+2024-09-22T09:22:31.828Z [WARNING]: The memory usage is high.
+2024-09-22T09:22:31.829Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:22:31.832Z [INFO]: Application has started.
+2024-09-22T09:22:44.142Z [WARNING]: The memory usage is high.
+2024-09-22T09:22:44.143Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:22:44.147Z [INFO]: Application has started.
+2024-09-22T09:23:00.661Z [WARNING]: The memory usage is high.
+2024-09-22T09:23:00.662Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:23:00.665Z [INFO]: Application has started.
+2024-09-22T09:23:07.050Z [WARNING]: The memory usage is high.
+2024-09-22T09:23:07.051Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:23:07.054Z [INFO]: Application has started.
+2024-09-22T09:23:17.681Z [WARNING]: The memory usage is high.
+2024-09-22T09:23:17.681Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:23:17.684Z [INFO]: Application has started.
+2024-09-22T09:24:06.304Z [WARNING]: The memory usage is high.
+2024-09-22T09:24:06.304Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:24:06.308Z [INFO]: Application has started.
+2024-09-22T09:24:42.073Z [WARNING]: The memory usage is high.
+2024-09-22T09:24:42.074Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:24:42.078Z [INFO]: Application has started.
+2024-09-22T09:24:50.300Z [WARNING]: The memory usage is high.
+2024-09-22T09:24:50.300Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:24:50.303Z [INFO]: Application has started.
+2024-09-22T09:24:57.584Z [WARNING]: The memory usage is high.
+2024-09-22T09:24:57.585Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:24:57.589Z [INFO]: Application has started.
+2024-09-22T09:31:08.337Z [WARNING]: The memory usage is high.
+2024-09-22T09:31:08.338Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:31:08.342Z [INFO]: Application has started.
+2024-09-22T09:36:31.346Z [WARNING]: The memory usage is high.
+2024-09-22T09:36:31.347Z [ERROR]: Failed to connect to the database.
+2024-09-22T09:36:31.350Z [INFO]: Application has started.
+2024-09-22T10:49:06.139Z [WARNING]: The memory usage is high.
+2024-09-22T10:49:06.140Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:49:06.144Z [INFO]: Application has started.
+2024-09-22T10:49:11.576Z [WARNING]: The memory usage is high.
+2024-09-22T10:49:11.577Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:49:11.579Z [INFO]: Application has started.
+2024-09-22T10:50:39.642Z [WARNING]: The memory usage is high.
+2024-09-22T10:50:39.643Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:50:39.647Z [INFO]: Application has started.
+2024-09-22T10:52:28.648Z [WARNING]: The memory usage is high.
+2024-09-22T10:52:28.648Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:52:28.652Z [INFO]: Application has started.
+2024-09-22T10:56:11.020Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:11.021Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:11.024Z [INFO]: Application has started.
+2024-09-22T10:56:18.304Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:18.305Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:18.308Z [INFO]: Application has started.
+2024-09-22T10:56:20.588Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:20.588Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:20.592Z [INFO]: Application has started.
+2024-09-22T10:56:35.753Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:35.754Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:35.757Z [INFO]: Application has started.
+2024-09-22T10:56:45.208Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:45.208Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:45.211Z [INFO]: Application has started.
+2024-09-22T10:56:48.441Z [WARNING]: The memory usage is high.
+2024-09-22T10:56:48.442Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:56:48.445Z [INFO]: Application has started.
+2024-09-22T10:59:11.270Z [WARNING]: The memory usage is high.
+2024-09-22T10:59:11.270Z [ERROR]: Failed to connect to the database.
+2024-09-22T10:59:11.274Z [INFO]: Application has started.
+2024-09-22T11:00:50.427Z [WARNING]: The memory usage is high.
+2024-09-22T11:00:50.428Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:00:50.432Z [INFO]: Application has started.
+2024-09-22T11:03:38.146Z [WARNING]: The memory usage is high.
+2024-09-22T11:03:38.147Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:03:38.151Z [INFO]: Application has started.
+2024-09-22T11:04:29.627Z [WARNING]: The memory usage is high.
+2024-09-22T11:04:29.628Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:04:29.631Z [INFO]: Application has started.
+2024-09-22T11:08:05.525Z [WARNING]: The memory usage is high.
+2024-09-22T11:08:05.525Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:08:05.529Z [INFO]: Application has started.
+2024-09-22T11:08:09.080Z [WARNING]: The memory usage is high.
+2024-09-22T11:08:09.080Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:08:09.083Z [INFO]: Application has started.
+2024-09-22T11:08:12.735Z [WARNING]: The memory usage is high.
+2024-09-22T11:08:12.735Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:08:12.739Z [INFO]: Application has started.
+2024-09-22T11:09:31.739Z [WARNING]: The memory usage is high.
+2024-09-22T11:09:31.740Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:09:31.744Z [INFO]: Application has started.
+2024-09-22T11:09:35.924Z [WARNING]: The memory usage is high.
+2024-09-22T11:09:35.924Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:09:35.927Z [INFO]: Application has started.
+2024-09-22T11:09:39.413Z [WARNING]: The memory usage is high.
+2024-09-22T11:09:39.414Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:09:39.418Z [INFO]: Application has started.
+2024-09-22T11:09:48.513Z [WARNING]: The memory usage is high.
+2024-09-22T11:09:48.514Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:09:48.517Z [INFO]: Application has started.
+2024-09-22T11:10:48.987Z [WARNING]: The memory usage is high.
+2024-09-22T11:10:48.988Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:10:48.991Z [INFO]: Application has started.
+2024-09-22T11:11:05.547Z [WARNING]: The memory usage is high.
+2024-09-22T11:11:05.548Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:11:05.552Z [INFO]: Application has started.
+2024-09-22T11:11:28.208Z [WARNING]: The memory usage is high.
+2024-09-22T11:11:28.208Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:11:28.212Z [INFO]: Application has started.
+2024-09-22T11:11:52.650Z [WARNING]: The memory usage is high.
+2024-09-22T11:11:52.650Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:11:52.654Z [INFO]: Application has started.
+2024-09-22T11:12:21.298Z [WARNING]: The memory usage is high.
+2024-09-22T11:12:21.299Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:12:21.302Z [INFO]: Application has started.
+2024-09-22T11:12:54.778Z [WARNING]: The memory usage is high.
+2024-09-22T11:12:54.779Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:12:54.784Z [INFO]: Application has started.
+2024-09-22T11:14:19.334Z [WARNING]: The memory usage is high.
+2024-09-22T11:14:19.334Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:14:19.338Z [INFO]: Application has started.
+2024-09-22T11:14:53.479Z [WARNING]: The memory usage is high.
+2024-09-22T11:14:53.480Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:14:53.485Z [INFO]: Application has started.
+2024-09-22T11:15:26.660Z [WARNING]: The memory usage is high.
+2024-09-22T11:15:26.661Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:15:26.664Z [INFO]: Application has started.
+2024-09-22T11:15:40.763Z [WARNING]: The memory usage is high.
+2024-09-22T11:15:40.764Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:15:40.773Z [INFO]: Application has started.
+2024-09-22T11:15:51.661Z [WARNING]: The memory usage is high.
+2024-09-22T11:15:51.661Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:15:51.664Z [INFO]: Application has started.
+2024-09-22T11:16:48.147Z [WARNING]: The memory usage is high.
+2024-09-22T11:16:48.148Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:16:48.152Z [INFO]: Application has started.
+2024-09-22T11:17:04.496Z [WARNING]: The memory usage is high.
+2024-09-22T11:17:04.497Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:17:04.501Z [INFO]: Application has started.
+2024-09-22T11:17:44.113Z [WARNING]: The memory usage is high.
+2024-09-22T11:17:44.113Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:17:44.117Z [INFO]: Application has started.
+2024-09-22T11:21:37.654Z [WARNING]: The memory usage is high.
+2024-09-22T11:21:37.655Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:21:37.659Z [INFO]: Application has started.
+2024-09-22T11:21:45.119Z [WARNING]: The memory usage is high.
+2024-09-22T11:21:45.120Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:21:45.123Z [INFO]: Application has started.
+2024-09-22T11:27:03.660Z [WARNING]: The memory usage is high.
+2024-09-22T11:27:03.661Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:27:03.666Z [INFO]: Application has started.
+2024-09-22T11:27:11.891Z [WARNING]: The memory usage is high.
+2024-09-22T11:27:11.891Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:27:11.894Z [INFO]: Application has started.
+2024-09-22T11:28:32.530Z [WARNING]: The memory usage is high.
+2024-09-22T11:28:32.531Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:28:32.536Z [INFO]: Application has started.
+2024-09-22T11:29:15.020Z [WARNING]: The memory usage is high.
+2024-09-22T11:29:15.022Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:29:15.027Z [INFO]: Application has started.
+2024-09-22T11:29:25.078Z [WARNING]: The memory usage is high.
+2024-09-22T11:29:25.078Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:29:25.081Z [INFO]: Application has started.
+2024-09-22T11:29:39.848Z [WARNING]: The memory usage is high.
+2024-09-22T11:29:39.849Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:29:39.852Z [INFO]: Application has started.
+2024-09-22T11:30:16.128Z [WARNING]: The memory usage is high.
+2024-09-22T11:30:16.128Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:30:16.131Z [INFO]: Application has started.
+2024-09-22T11:30:25.903Z [WARNING]: The memory usage is high.
+2024-09-22T11:30:25.903Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:30:25.907Z [INFO]: Application has started.
+2024-09-22T11:31:20.287Z [WARNING]: The memory usage is high.
+2024-09-22T11:31:20.287Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:31:20.291Z [INFO]: Application has started.
+2024-09-22T11:31:44.200Z [WARNING]: The memory usage is high.
+2024-09-22T11:31:44.200Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:31:44.204Z [INFO]: Application has started.
+2024-09-22T11:34:34.515Z [WARNING]: The memory usage is high.
+2024-09-22T11:34:34.515Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:34:34.519Z [INFO]: Application has started.
+2024-09-22T11:35:03.139Z [WARNING]: The memory usage is high.
+2024-09-22T11:35:03.140Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:35:27.002Z [WARNING]: The memory usage is high.
+2024-09-22T11:35:27.002Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:35:27.007Z [INFO]: Application has started.
+2024-09-22T11:35:55.250Z [WARNING]: The memory usage is high.
+2024-09-22T11:35:55.250Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:35:55.255Z [INFO]: Application has started.
+2024-09-22T11:36:23.913Z [WARNING]: The memory usage is high.
+2024-09-22T11:36:23.913Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:36:23.917Z [INFO]: Application has started.
+2024-09-22T11:37:12.258Z [WARNING]: The memory usage is high.
+2024-09-22T11:37:12.258Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:37:12.261Z [INFO]: Application has started.
+2024-09-22T11:37:29.901Z [WARNING]: The memory usage is high.
+2024-09-22T11:37:29.901Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:37:29.904Z [INFO]: Application has started.
+2024-09-22T11:37:38.913Z [WARNING]: The memory usage is high.
+2024-09-22T11:37:38.914Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:37:38.918Z [INFO]: Application has started.
+2024-09-22T11:38:22.493Z [WARNING]: The memory usage is high.
+2024-09-22T11:38:22.493Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:38:22.496Z [INFO]: Application has started.
+2024-09-22T11:38:50.233Z [WARNING]: The memory usage is high.
+2024-09-22T11:38:50.234Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:38:50.238Z [INFO]: Application has started.
+2024-09-22T11:39:00.679Z [WARNING]: The memory usage is high.
+2024-09-22T11:39:00.679Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:39:00.683Z [INFO]: Application has started.
+2024-09-22T11:39:01.789Z [WARNING]: The memory usage is high.
+2024-09-22T11:39:01.789Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:39:01.794Z [INFO]: Application has started.
+2024-09-22T11:39:26.015Z [WARNING]: The memory usage is high.
+2024-09-22T11:39:26.016Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:39:26.020Z [INFO]: Application has started.
+2024-09-22T11:39:38.926Z [WARNING]: The memory usage is high.
+2024-09-22T11:39:38.926Z [ERROR]: Failed to connect to the database.
+2024-09-22T11:39:38.930Z [INFO]: Application has started.
+2024-09-22T18:56:24.114Z [WARNING]: The memory usage is high.
+2024-09-22T18:56:24.115Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:56:24.122Z [INFO]: Application has started.
+2024-09-22T18:56:38.299Z [WARNING]: The memory usage is high.
+2024-09-22T18:56:38.300Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:56:38.307Z [INFO]: Application has started.
+2024-09-22T18:56:50.616Z [WARNING]: The memory usage is high.
+2024-09-22T18:56:50.617Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:56:50.623Z [INFO]: Application has started.
+2024-09-22T18:56:58.112Z [WARNING]: The memory usage is high.
+2024-09-22T18:56:58.113Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:56:58.119Z [INFO]: Application has started.
+2024-09-22T18:57:08.698Z [WARNING]: The memory usage is high.
+2024-09-22T18:57:08.699Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:57:08.706Z [INFO]: Application has started.
+2024-09-22T18:57:34.100Z [WARNING]: The memory usage is high.
+2024-09-22T18:57:34.102Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:57:34.110Z [INFO]: Application has started.
+2024-09-22T18:58:12.335Z [WARNING]: The memory usage is high.
+2024-09-22T18:58:12.336Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:58:12.342Z [INFO]: Application has started.
+2024-09-22T18:58:30.691Z [WARNING]: The memory usage is high.
+2024-09-22T18:58:30.692Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:58:30.699Z [INFO]: Application has started.
+2024-09-22T18:58:36.667Z [WARNING]: The memory usage is high.
+2024-09-22T18:58:36.668Z [ERROR]: Failed to connect to the database.
+2024-09-22T18:58:36.674Z [INFO]: Application has started.
+2024-09-22T19:00:25.625Z [WARNING]: The memory usage is high.
+2024-09-22T19:00:25.626Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:00:25.634Z [INFO]: Application has started.
+2024-09-22T19:00:28.120Z [WARNING]: The memory usage is high.
+2024-09-22T19:00:28.121Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:00:28.128Z [INFO]: Application has started.
+2024-09-22T19:00:37.522Z [WARNING]: The memory usage is high.
+2024-09-22T19:00:37.523Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:00:37.529Z [INFO]: Application has started.
+2024-09-22T19:00:58.757Z [WARNING]: The memory usage is high.
+2024-09-22T19:00:58.758Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:00:58.766Z [INFO]: Application has started.
+2024-09-22T19:02:18.403Z [WARNING]: The memory usage is high.
+2024-09-22T19:02:18.404Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:02:18.410Z [INFO]: Application has started.
+2024-09-22T19:02:54.876Z [WARNING]: The memory usage is high.
+2024-09-22T19:02:54.878Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:02:54.884Z [INFO]: Application has started.
+2024-09-22T19:03:37.812Z [WARNING]: The memory usage is high.
+2024-09-22T19:03:37.813Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:03:37.820Z [INFO]: Application has started.
+2024-09-22T19:03:53.065Z [WARNING]: The memory usage is high.
+2024-09-22T19:03:53.066Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:03:53.073Z [INFO]: Application has started.
+2024-09-22T19:03:56.101Z [WARNING]: The memory usage is high.
+2024-09-22T19:03:56.102Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:03:56.109Z [INFO]: Application has started.
+2024-09-22T19:04:06.433Z [WARNING]: The memory usage is high.
+2024-09-22T19:04:06.434Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:04:06.440Z [INFO]: Application has started.
+2024-09-22T19:04:26.665Z [WARNING]: The memory usage is high.
+2024-09-22T19:04:26.666Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:04:26.673Z [INFO]: Application has started.
+2024-09-22T19:04:39.423Z [WARNING]: The memory usage is high.
+2024-09-22T19:04:39.424Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:04:39.430Z [INFO]: Application has started.
+2024-09-22T19:04:54.579Z [WARNING]: The memory usage is high.
+2024-09-22T19:04:54.580Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:04:54.586Z [INFO]: Application has started.
+2024-09-22T19:04:56.435Z [WARNING]: The memory usage is high.
+2024-09-22T19:04:56.436Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:04:56.442Z [INFO]: Application has started.
+2024-09-22T19:06:44.838Z [WARNING]: The memory usage is high.
+2024-09-22T19:06:44.839Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:06:44.846Z [INFO]: Application has started.
+2024-09-22T19:06:47.190Z [WARNING]: The memory usage is high.
+2024-09-22T19:06:47.191Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:06:47.197Z [INFO]: Application has started.
+2024-09-22T19:07:05.588Z [WARNING]: The memory usage is high.
+2024-09-22T19:07:05.590Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:07:05.596Z [INFO]: Application has started.
+2024-09-22T19:07:37.942Z [WARNING]: The memory usage is high.
+2024-09-22T19:07:37.943Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:07:37.950Z [INFO]: Application has started.
+2024-09-22T19:08:17.962Z [WARNING]: The memory usage is high.
+2024-09-22T19:08:17.963Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:08:17.971Z [INFO]: Application has started.
+2024-09-22T19:12:19.548Z [WARNING]: The memory usage is high.
+2024-09-22T19:12:19.550Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:12:19.557Z [INFO]: Application has started.
+2024-09-22T19:13:23.034Z [WARNING]: The memory usage is high.
+2024-09-22T19:13:23.035Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:13:23.041Z [INFO]: Application has started.
+2024-09-22T19:14:10.026Z [WARNING]: The memory usage is high.
+2024-09-22T19:14:10.028Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:14:10.035Z [INFO]: Application has started.
+2024-09-22T19:14:31.325Z [WARNING]: The memory usage is high.
+2024-09-22T19:14:31.326Z [ERROR]: Failed to connect to the database.
+2024-09-22T19:14:31.332Z [INFO]: Application has started.
