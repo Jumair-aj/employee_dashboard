@@ -168,7 +168,7 @@ passport.use(new LocalStrategy(async (username, password, done) => {
 
 
 
-
+ 
 app.post('/register', async (req, res) => {
     try {
         const { username, password, email, role } = req.body;
