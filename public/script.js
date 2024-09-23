@@ -105,6 +105,9 @@ function salaryFilteredEmployees() {
                 isFetching = false;
             });
     }
+    else{
+        showToast('Please enter salary','error');
+    }
 }
 
 window.addEventListener('scroll', () => {
@@ -186,10 +189,6 @@ function openModal(title, employee = null) {
     }, 10);
 }
 
-closeBtn.onclick = () => {
-    closeModal();
-};
-
 employeeForm.onsubmit = (e) => {
     e.preventDefault();
     const id = document.getElementById('employeeId').value;
@@ -206,6 +205,8 @@ employeeForm.onsubmit = (e) => {
             body: JSON.stringify(employee)
         })
             .then(() => {
+                currentPage = 1;
+                employees = [];
                 fetchEmployees();
                 closeModal();
                 showToast('Employee updated successfully!');
@@ -217,6 +218,8 @@ employeeForm.onsubmit = (e) => {
             body: JSON.stringify(employee)
         })
             .then(() => {
+                currentPage = 1;
+                employees = []
                 fetchEmployees();
                 closeModal();
                 showToast('Employee added successfully!');
@@ -237,15 +240,13 @@ confirmDeleteBtn.onclick = () => {
     if (currentEmployeeId) {
         fetch(`/api/employees/${currentEmployeeId}`, { method: 'DELETE' })
             .then(() => {
+                currentPage = 1;
+                employees = [];
                 fetchEmployees();
                 closeConfirmModal();
                 showToast('Employee deleted successfully!');
             });
     }
-};
-
-cancelDeleteBtn.onclick = () => {
-    closeConfirmModal();
 };
 
 function closeModal() {
@@ -322,45 +323,47 @@ employeeForm.addEventListener('submit', async (e) => {
         } else {
             showToast('Error uploading employees');
         }
-    } else {
-        const newEmployee = {
-            name: nameInput.value,
-            dob: dobInput.value,
-            salary: salaryInput.value
-        };
+    } 
+    // else {
+    //     const newEmployee = {
+    //         name: nameInput.value,
+    //         dob: dobInput.value,
+    //         salary: salaryInput.value
+    //     };
 
-        const response = await fetch('/api/employees', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newEmployee)
-        });
+    //     const response = await fetch('/api/employees', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify(newEmployee)
+    //     });
 
-        if (response.ok) {
-            showToast('Employee added successfully!');
-            modal.style.display = 'none';
-            fetchEmployees();
-        } else {
-            showToast('Error adding employee');
-        }
-    }
+    //     if (response.ok) {
+    //         showToast('Employee added successfully!');
+    //         modal.style.display = 'none';
+    //         fetchEmployees();
+    //     } else {
+    //         showToast('Error adding employee');
+    //     }
+    // }
 });
 
-function showToast(message) {
+
+ function showToast(message, type) {
     const toast = document.createElement('div');
-    toast.className = 'toast';
-    toast.textContent = message;
-    document.body.appendChild(toast);
+    toast.innerText = message;
+    toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
+    toast.style.color = 'white';
+    toast.style.padding = '10px';
+    toast.style.marginBottom = '10px';
+    toast.style.borderRadius = '3px';
+    toast.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+
+    const toastContainer = document.getElementById('toast-container');
+    toastContainer.appendChild(toast);
 
     setTimeout(() => {
-        toast.style.opacity = '1';
-    }, 100); 
-
-    setTimeout(() => {
-        toast.style.opacity = '0';
-        setTimeout(() => {
-            document.body.removeChild(toast);
-        }, 300); 
-    }, 3000); 
+        toast.remove();
+    }, 3000);
 }
 
 document.getElementById('exportExcelBtn').addEventListener('click', async () => {
@@ -385,6 +388,9 @@ document.getElementById('exportExcelBtn').addEventListener('click', async () => 
         } catch (error) {
             console.error('Error exporting Excel:', error);
         }
+    }
+    else{
+        showToast('Please enter salary','error');
     }
 });
 

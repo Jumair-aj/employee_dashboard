@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>SSO Demo</title>
+    <title>Employee Dashboard</title>
 </head>
 
 <body class="login">
@@ -19,6 +19,7 @@
                 <button type="submit" class="btn">Login</button>
             </form>
             <a href="/auth/google" class="btn google-btn"><i class="fa-brands fa-google"></i>Login with Google</a>
+            <p style="margin-top: 1rem;">Can't login.<a href="/register.html"> Register</a></p>
         </div>
         <div class="">
             <img src="./images/login-img-1.jpg" alt="" class="login-img">
@@ -28,7 +29,7 @@
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent the form from submitting normally
+            e.preventDefault(); 
 
             const formData = new FormData(e.target);
             const data = {
@@ -48,7 +49,7 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-                    // Redirect to the homepage or wherever specified
+
                     window.location.href = result.redirectUrl;
                 } else {
                     showToast(result.message, 'error');
@@ -58,11 +59,11 @@
             }
         });
 
-        // Function to show a toast notification
+
         function showToast(message, type) {
             const toast = document.createElement('div');
             toast.innerText = message;
-            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; // red for error, green for success
+            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
             toast.style.color = 'white';
             toast.style.padding = '10px';
             toast.style.marginBottom = '10px';
@@ -72,7 +73,6 @@
             const toastContainer = document.getElementById('toast-container');
             toastContainer.appendChild(toast);
 
-            // Remove the toast after 3 seconds
             setTimeout(() => {
                 toast.remove();
             }, 3000);

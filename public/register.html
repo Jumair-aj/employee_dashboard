@@ -11,7 +11,11 @@
         <form action="/register" method="post" class="register-form">
             <input type="text" name="username" placeholder="Username" required class="input">
             <input type="password" name="password" placeholder="Password" required class="input">
-            <input type="text" name="role" placeholder="Role" required class="input">
+            <!-- <input type="text" name="role" placeholder="Role" required class="input"> -->
+            <select class="input" name="role" placeholder="Role" required>
+                <option value="admin">admin</option>
+                <option value="admin">user</option>
+            </select>
             <input type="email" name="email" placeholder="Email" required class="input">
             <button type="submit" class="btn">Register</button>
         </form>
@@ -20,16 +24,17 @@
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent the form from submitting normally
-
+            e.preventDefault(); 
             const formData = new FormData(e.target);
             const data = {
                 username: formData.get('username'),
-                password: formData.get('password')
+                password: formData.get('password'),
+                role: formData.get('password'),
+                email: formData.get('password')
             };
 
             try {
-                const response = await fetch('/auth/login/local', {
+                const response = await fetch('/auth/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -40,7 +45,6 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-                    // Redirect to the homepage or wherever specified
                     window.location.href = result.redirectUrl;
                 } else {
                     showToast(result.message, 'error');
@@ -50,11 +54,10 @@
             }
         });
 
-        // Function to show a toast notification
         function showToast(message, type) {
             const toast = document.createElement('div');
             toast.innerText = message;
-            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; // red for error, green for success
+            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
             toast.style.color = 'white';
             toast.style.padding = '10px';
             toast.style.marginBottom = '10px';
@@ -64,7 +67,6 @@
             const toastContainer = document.getElementById('toast-container');
             toastContainer.appendChild(toast);
 
-            // Remove the toast after 3 seconds
             setTimeout(() => {
                 toast.remove();
             }, 3000);

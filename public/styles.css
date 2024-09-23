@@ -1,4 +1,3 @@
-/* public/styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
@@ -239,6 +238,11 @@ tr:nth-child(even) {
     justify-content: flex-end;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+.actions{
+    display: flex;
+    gap: 1rem;
 }
 
 @media (max-width: 768px) {
