@@ -19,6 +19,10 @@
                 <button type="submit" class="btn">Login</button>
             </form>
             <a href="/auth/google" class="btn google-btn"><i class="fa-brands fa-google"></i>Login with Google</a>
+            <!-- <a href="/auth/azuread" class="btn azure-btn">
+                <i class="fa-brands fa-microsoft"></i> Login with Azure AD
+            </a> -->
+            <button id="adLoginBtn" class="btn ad-btn"><i class="fa-solid fa-building"></i> Login with Active Directory</button>
             <p style="margin-top: 1rem;">Can't login.<a href="/register.html"> Register</a></p>
         </div>
         <div class="">
@@ -29,7 +33,7 @@
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault(); 
+            e.preventDefault();
 
             const formData = new FormData(e.target);
             const data = {
@@ -49,7 +53,6 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-
                     window.location.href = result.redirectUrl;
                 } else {
                     showToast(result.message, 'error');
@@ -59,11 +62,41 @@
             }
         });
 
+        // Add event listener for Active Directory login
+        document.getElementById('adLoginBtn').addEventListener('click', async () => {
+            const username = document.querySelector('input[name="username"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+
+            if (!username || !password) {
+                showToast('Please enter both username and password', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/auth/login/ad', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    showToast(result.message, 'success');
+                    window.location.href = result.redirectUrl;
+                } else {
+                    showToast(result.message, 'error');
+                }
+            } catch (error) {
+                showToast('An error occurred during Active Directory login', 'error');
+            }
+        });
 
         function showToast(message, type) {
             const toast = document.createElement('div');
             toast.innerText = message;
-            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
+            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50';
             toast.style.color = 'white';
             toast.style.padding = '10px';
             toast.style.marginBottom = '10px';

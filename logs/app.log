@@ -1,46 +1,41 @@
-2024-09-23T05:25:47.967Z [INFO]: Application has started.
-2024-09-23T05:25:53.828Z [INFO]: Application has started.
-2024-09-23T05:26:18.789Z [INFO]: Application has started.
-2024-09-23T05:26:56.697Z [INFO]: Application has started.
-2024-09-23T05:27:35.479Z [INFO]: Application has started.
-2024-09-23T05:27:43.180Z [INFO]: Application has started.
-2024-09-23T05:28:05.139Z [INFO]: Application has started.
-2024-09-23T05:28:08.361Z [INFO]: Application has started.
-2024-09-23T05:29:48.689Z [INFO]: Application has started.
-2024-09-23T05:29:55.015Z [INFO]: Application has started.
-2024-09-23T05:30:34.474Z [INFO]: Application has started.
-2024-09-23T05:34:47.204Z [INFO]: Application has started.
-2024-09-23T05:34:53.354Z [INFO]: Application has started.
-2024-09-23T05:34:56.539Z [INFO]: Application has started.
-2024-09-23T05:34:57.956Z [INFO]: Application has started.
-2024-09-23T05:35:02.489Z [INFO]: Application has started.
-2024-09-23T05:35:04.641Z [INFO]: Application has started.
-2024-09-23T05:35:06.922Z [INFO]: Application has started.
-2024-09-23T05:35:08.674Z [INFO]: Application has started.
-2024-09-23T05:35:21.175Z [INFO]: Application has started.
-2024-09-23T05:35:32.217Z [INFO]: Application has started.
-2024-09-23T05:36:00.895Z [INFO]: Application has started.
-2024-09-23T05:36:16.418Z [INFO]: Application has started.
-2024-09-23T06:38:29.224Z [INFO]: Application has started.
-2024-09-23T06:38:36.137Z [INFO]: Application has started.
-2024-09-23T06:38:54.804Z [INFO]: Application has started.
-2024-09-23T07:56:34.267Z [INFO]: Application has started.
-2024-09-23T08:04:58.390Z [INFO]: Application has started.
-2024-09-23T08:05:20.889Z [INFO]: Application has started.
-2024-09-23T08:05:33.872Z [INFO]: Application has started.
-2024-09-23T08:06:20.136Z [INFO]: Application has started.
-2024-09-23T08:06:24.533Z [INFO]: Application has started.
-2024-09-23T08:06:30.897Z [INFO]: Application has started.
-2024-09-23T08:06:38.911Z [INFO]: Application has started.
-2024-09-23T08:06:40.341Z [ERROR]: Error: Access denied for user 'sql12732861'@'49.47.195.31' (using password: YES)
-2024-09-23T08:16:44.067Z [INFO]: Application has started.
-2024-09-23T08:16:50.611Z [INFO]: Application has started.
-2024-09-23T08:20:44.269Z [INFO]: Application has started.
-2024-09-23T08:20:55.696Z [INFO]: Application has started.
-2024-09-23T08:21:16.805Z [INFO]: Application has started.
-2024-09-23T08:21:46.198Z [INFO]: Application has started.
-2024-09-23T08:21:56.431Z [ERROR]: Error: Column 'role' cannot be null
-2024-09-23T08:23:27.375Z [ERROR]: Error: Column 'role' cannot be null
-2024-09-23T08:23:42.322Z [ERROR]: Error: Column 'role' cannot be null
-2024-09-23T08:23:52.547Z [INFO]: Registered new user: admin
-2024-09-23T08:24:27.239Z [INFO]: User Logged Out
+2024-09-25T14:32:03.163Z [INFO]: Application has started.
+2024-09-25T14:59:26.196Z [INFO]: Application has started.
+2024-09-25T15:10:40.845Z [INFO]: Application has started.
+2024-09-25T15:20:43.847Z [INFO]: Application has started.
+2024-09-25T15:20:52.874Z [INFO]: Application has started.
+2024-09-25T15:20:57.996Z [INFO]: Application has started.
+2024-09-25T15:24:22.390Z [INFO]: Application has started.
+2024-09-25T15:27:25.227Z [INFO]: Application has started.
+2024-09-25T15:29:34.534Z [ERROR]: AggregateError
+2024-09-25T15:29:34.538Z [ERROR]: AggregateError
+2024-09-25T15:29:38.594Z [ERROR]: AggregateError
+2024-09-25T15:29:38.595Z [ERROR]: AggregateError
+2024-09-25T15:29:39.927Z [ERROR]: AggregateError
+2024-09-25T15:29:39.928Z [ERROR]: AggregateError
+2024-09-25T15:29:40.232Z [ERROR]: AggregateError
+2024-09-25T15:29:40.234Z [ERROR]: AggregateError
+2024-09-25T15:29:40.391Z [ERROR]: AggregateError
+2024-09-25T15:29:40.455Z [ERROR]: AggregateError
+2024-09-25T15:29:40.547Z [ERROR]: AggregateError
+2024-09-25T15:29:40.548Z [ERROR]: AggregateError
+2024-09-25T15:29:44.164Z [ERROR]: AggregateError
+2024-09-25T15:29:44.166Z [ERROR]: AggregateError
+2024-09-25T15:31:47.406Z [INFO]: Application has started.
+2024-09-25T15:31:59.772Z [INFO]: User Logged Out
+2024-09-25T15:32:36.155Z [ERROR]: AggregateError
+2024-09-25T15:32:36.178Z [ERROR]: AggregateError
+2024-09-25T15:33:29.230Z [INFO]: Application has started.
+2024-09-25T15:34:20.796Z [INFO]: Application has started.
+2024-09-25T15:34:56.282Z [ERROR]: AggregateError
+2024-09-25T15:34:56.286Z [ERROR]: AggregateError
+2024-09-25T15:35:59.755Z [INFO]: Application has started.
+2024-09-25T15:36:38.256Z [ERROR]: AggregateError
+2024-09-25T15:36:38.260Z [ERROR]: AggregateError
+2024-09-25T15:41:56.698Z [INFO]: Application has started.
+2024-09-25T15:42:08.472Z [INFO]: Application has started.
+2024-09-25T15:52:23.909Z [INFO]: Application has started.
+2024-09-25T15:53:20.422Z [ERROR]: AggregateError
+2024-09-25T15:54:42.926Z [INFO]: Application has started.
+2024-09-25T15:55:07.509Z [ERROR]: AggregateError
+2024-09-25T15:57:04.751Z [INFO]: Application has started.
+2024-09-25T15:57:37.508Z [ERROR]: AggregateError

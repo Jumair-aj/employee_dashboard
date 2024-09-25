@@ -114,7 +114,6 @@ router.post('/bulk-upload', upload.single('file'), (req, res) => {
 
 router.get('/export/excel/:salary', async (req, res) => {
     const salary = parseFloat(req.params.salary);
-
     try {
         const excelBuffer = await downloadExcelEmployee(salary);
         const filename = `employees-above-${salary}.xlsx`;

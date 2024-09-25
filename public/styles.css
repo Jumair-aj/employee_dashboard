@@ -384,3 +384,7 @@ tr:nth-child(even) {
     flex-direction: column;
     gap: 1rem;
 }
+
+a{
+    text-decoration:none ;
+}
