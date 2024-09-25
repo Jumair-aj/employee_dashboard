@@ -6,30 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Employee Dashboard</title>
+    <title>Employee Dashboard - Login</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f7fa;
+            --text-color: #333;
+            --light-text-color: #777;
+            --border-color: #e1e1e1;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .login-container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .login-image {
+            flex: 1;
+            display: none;
+        }
+
+        .login-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--light-text-color);
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--light-text-color);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px 12px 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #3a7bc8;
+        }
+
+        .alternative-login {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .alternative-login p {
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-google,
+        .btn-ad {
+            flex: 1;
+            margin: 0 5px;
+            background-color: #fff;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-google:hover,
+        .btn-ad:hover {
+            background-color: #f5f5f5;
+        }
+
+        .register-link {
+            margin-top: 30px;
+            text-align: center;
+            color: var(--light-text-color);
+        }
+
+        .register-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        #toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .toast {
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        .toast-success {
+            background-color: #4CAF50;
+        }
+
+        .toast-error {
+            background-color: #f44336;
+        }
+
+        @media (min-width: 768px) {
+            .login-image {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
-<body class="login">
-    <div class="login-container">
-        <div id="login-form">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <input type="text" name="username" placeholder="Username" required class="input">
-                <input type="password" name="password" placeholder="Password" required class="input">
-                <button type="submit" class="btn">Login</button>
-            </form>
-            <a href="/auth/google" class="btn google-btn"><i class="fa-brands fa-google"></i>Login with Google</a>
-            <!-- <a href="/auth/azuread" class="btn azure-btn">
-                <i class="fa-brands fa-microsoft"></i> Login with Azure AD
-            </a> -->
-            <button id="adLoginBtn" class="btn ad-btn"><i class="fa-solid fa-building"></i> Login with Active Directory</button>
-            <p style="margin-top: 1rem;">Can't login.<a href="/register.html"> Register</a></p>
-        </div>
-        <div class="">
-            <img src="./images/login-img-1.jpg" alt="" class="login-img">
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Welcome Back</h2>
+                <p class="subtitle">Please login to your account</p>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <div class="alternative-login">
+                    <p>Or login with</p>
+                    <div class="login-options">
+                        <a href="/auth/google" class="btn btn-google"><i class="fab fa-google"></i> Google</a>
+                        <button id="adLoginBtn" class="btn btn-ad"><i class="fas fa-building"></i> Active
+                            Directory</button>
+                    </div>
+                </div>
+                <p class="register-link">Don't have an account? <a href="/register.html">Register</a></p>
+            </div>
+            <div class="login-image">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+                    alt="Modern office workspace" class="login-img">
+            </div>
         </div>
     </div>
-    <div id="toast-container" style="position: fixed; top: 10px; right: 10px; z-index: 1000;"></div>
+    <div id="toast-container"></div>
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
@@ -111,7 +314,6 @@
             }, 3000);
         }
     </script>
-
 </body>
 
 </html>

@@ -348,24 +348,55 @@ employeeForm.addEventListener('submit', async (e) => {
 });
 
 
- function showToast(message, type) {
+const toastContainer = document.getElementById('toast-container');
+
+function createToastElement(message, type) {
     const toast = document.createElement('div');
-    toast.innerText = message;
-    toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
-    toast.style.color = 'white';
-    toast.style.padding = '10px';
-    toast.style.marginBottom = '10px';
-    toast.style.borderRadius = '3px';
-    toast.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
-
-    const toastContainer = document.getElementById('toast-container');
-    toastContainer.appendChild(toast);
-
-    setTimeout(() => {
-        toast.remove();
-    }, 3000);
+    toast.className = `toast toast-${type}`;
+    
+    const icon = document.createElement('span');
+    icon.className = 'toast-icon';
+    icon.textContent = type === 'error' ? '❌' : type === 'success' ? '✅' : 'ℹ️';
+    
+    const messageElement = document.createElement('span');
+    messageElement.className = 'toast-message';
+    messageElement.textContent = message;
+    
+    const closeButton = document.createElement('button');
+    closeButton.className = 'toast-close';
+    closeButton.innerHTML = '&times;';
+    closeButton.addEventListener('click', () => removeToast(toast));
+    
+    toast.appendChild(icon);
+    toast.appendChild(messageElement);
+    toast.appendChild(closeButton);
+    
+    return toast;
 }
 
+function showToast(message, type = 'info') {
+    const toast = createToastElement(message, type);
+    toastContainer.appendChild(toast);
+    
+    // Trigger reflow to enable animation
+    toast.offsetHeight;
+    
+    toast.classList.add('show');
+    
+    setTimeout(() => removeToast(toast), 5000);
+}
+
+function removeToast(toast) {
+    toast.classList.remove('show');
+    toast.addEventListener('transitionend', () => {
+        toast.remove();
+    });
+}
+
+// Example usage:
+// showToast('Success message', 'success');
+// showToast('Error message', 'error');
+// showToast('Info message', 'info');
 document.getElementById('exportExcelBtn').addEventListener('click', async () => {
     const salary = parseFloat(salaryRangeInput.value);
     if (salary) {
@@ -395,3 +426,4 @@ document.getElementById('exportExcelBtn').addEventListener('click', async () => 
 });
 
 fetchEmployees();
+

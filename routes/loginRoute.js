@@ -47,10 +47,10 @@ const router = express.Router();
 //       }
 //     )
 //   );
-  
+
 
 //   router.get('/auth/azuread', passport.authenticate('azuread-openidconnect', { failureRedirect: '/login' }));
-  
+
 //   router.post('/auth/azuread/callback',
 //     passport.authenticate('azuread-openidconnect', { failureRedirect: '/login' }),
 //     (req, res) => res.redirect('/dashboard.html')
@@ -61,7 +61,7 @@ const config = {
     baseDN: process.env.AD_BASE_DN,
     username: process.env.AD_USERNAME,
     password: process.env.AD_PASSWORD,
-    timeout: 10000, 
+    timeout: 10000,
 };
 
 const ad = new ActiveDirectory(config);
@@ -82,21 +82,24 @@ router.post('/auth/login/ad', (req, res) => {
                     logError(err);
                     return res.status(500).json({ message: 'Error finding user' });
                 }
-                
+
                 if (!user) {
+                    logError(`User not found: ${username}`);
                     return res.status(401).json({ message: 'User not found' });
                 }
-                
+
                 // Create a session for the user
                 req.login(user, (err) => {
                     if (err) {
                         logError(err);
                         return res.status(500).json({ message: 'Error creating session' });
                     }
+                    logInfo(`User logged in: ${username}`);
                     return res.json({ message: 'Login successful', redirectUrl: '/dashboard.html' });
                 });
             });
         } else {
+            logError(`Authentication failed: ${username}`);
             return res.status(401).json({ message: 'Authentication failed' });
         }
     });
@@ -113,10 +116,11 @@ passport.use(new GoogleStrategy({
         try {
             const [rows] = await db.query('SELECT * FROM users WHERE email = ?', [profile.emails[0].value]);
             if (rows.length > 0) {
+                logInfo(`User found: ${profile.displayName}`);
                 return cb(null, rows[0]);
             } else {
                 const [result] = await db.query('INSERT INTO users ( username,password, email, role) VALUES (?, ?, ?,?)',
-                    [profile.displayName,'user', profile.emails[0].value, 'user']);
+                    [profile.displayName, 'user', profile.emails[0].value, 'user']);
                 const newUser = {
                     id: result.insertId,
                     name: profile.displayName,
@@ -124,10 +128,11 @@ passport.use(new GoogleStrategy({
                     email: profile.emails[0].value,
                     role: 'user'
                 };
+                logInfo(`User created: ${profile.displayName}`);
                 return cb(null, newUser);
             }
         } catch (error) {
-          logError(error)
+            logError(error)
             return cb(error);
         }
     }
@@ -145,68 +150,72 @@ router.get('/auth/google/callback',
 
 passport.use(new LocalStrategy(async (username, password, done) => {
     try {
-      const [rows] = await db.query('SELECT * FROM users WHERE username = ?', [username]);
-      if (rows.length > 0) {
-        const user = rows[0];
-        const isMatch = await bcrypt.compare(password, user.password);
-        if (isMatch) {
-          return done(null, user);
+        const [rows] = await db.query('SELECT * FROM users WHERE username = ?', [username]);
+        if (rows.length > 0) {
+            const user = rows[0];
+            const isMatch = await bcrypt.compare(password, user.password);
+            if (isMatch) {
+                logInfo(`User logged in: ${username}`);
+                return done(null, user);
+            } else {
+                logError(`Incorrect password: ${username}`);
+                return done(null, false, { message: 'Incorrect password.' });
+            }
         } else {
-          return done(null, false, { message: 'Incorrect password.' });
+            logError(`User not found: ${username}`);
+            return done(null, false, { message: 'User not found.' });
         }
-      } else {
-        return done(null, false, { message: 'User not found.' });
-      }
     } catch (error) {
-      return done(error);
+        return done(error);
     }
-  }));
+}));
 
-  
-  router.post('/auth/login/local', (req, res, next) => {
+
+router.post('/auth/login/local', (req, res, next) => {
     passport.authenticate('local', (err, user, info) => {
         if (err) {
             logError(err)
-        return res.status(500).json({ message: 'An error occurred' });
-    }
-      if (!user) {
-        return res.status(401).json({ message: info.message || 'Authentication failed' });
-    }
-    req.logIn(user, (err) => {
-        if (err) {
-            logError(err)
-            return res.status(500).json({ message: 'Login failed' });
+            return res.status(500).json({ message: 'An error occurred' });
         }
-        return res.json({ message: 'Login successful', redirectUrl: '/dashboard.html' });
-    });
-})(req, res, next);
+        if (!user) {
+            logError(info.message)
+            return res.status(401).json({ message: info.message || 'Authentication failed' });
+        }
+        req.logIn(user, (err) => {
+            if (err) {
+                logError(err)
+                return res.status(500).json({ message: 'Login failed' });
+            }
+            return res.json({ message: 'Login successful', redirectUrl: '/dashboard.html' });
+        });
+    })(req, res, next);
 });
 
-  passport.serializeUser((user, done) => {
+passport.serializeUser((user, done) => {
     done(null, user.id);
-  });
-  
+});
 
-  passport.deserializeUser(async (id, done) => {
+
+passport.deserializeUser(async (id, done) => {
     try {
-      const [rows] = await db.query('SELECT * FROM users WHERE id = ?', [id]);
-      done(null, rows[0]);
+        const [rows] = await db.query('SELECT * FROM users WHERE id = ?', [id]);
+        done(null, rows[0]);
     } catch (error) {
-      done(error);
+        done(error);
     }
-  });
+});
 
-router.post('/register', async (req, res) => {
+router.post('/auth/register', async (req, res) => {
     try {
         const { username, password, email, role } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);
         await db.query('INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)',
             [username, hashedPassword, email, role]);
         logInfo(`Registered new user: ${username}`)
-        res.redirect('/');
+        res.status(201).send({ message: 'User registered successfully' });
     } catch (error) {
         logError(error)
-        res.status(500).json({ error: 'Error registering new user' });
+        res.json({ error: 'Error registering new user' });
     }
 });
 

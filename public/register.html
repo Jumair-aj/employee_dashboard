@@ -3,27 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f7fa;
+            --text-color: #333;
+            --error-color: #f44336;
+            --success-color: #4CAF50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .register-form {
+            padding: 30px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        select.input {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3a7bc8;
+        }
+
+        #toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #toast-container > div {
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        #toast-container > div.show {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="login">
         <h2>Register</h2>
-        <form action="/register" method="post" class="register-form">
+        <form class="register-form" id="register-form">
             <input type="text" name="username" placeholder="Username" required class="input">
             <input type="password" name="password" placeholder="Password" required class="input">
-            <!-- <input type="text" name="role" placeholder="Role" required class="input"> -->
-            <select class="input" name="role" placeholder="Role" required>
-                <option value="admin">admin</option>
-                <option value="user">user</option>
+            <select class="input" name="role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
             </select>
             <input type="email" name="email" placeholder="Email" required class="input">
             <button type="submit" class="btn">Register</button>
         </form>
     </div>
-    <div id="toast-container" style="position: fixed; top: 10px; right: 10px; z-index: 1000;"></div>
+    <div id="toast-container"></div>
 
     <script>
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+        document.getElementById('register-form').addEventListener('submit', async (e) => {
             e.preventDefault(); 
             const formData = new FormData(e.target);
             const data = {
@@ -45,7 +154,7 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-                    window.location.href = result.redirectUrl;
+                    window.location.href ='/';
                 } else {
                     showToast(result.message, 'error');
                 }
@@ -72,6 +181,5 @@
             }, 3000);
         }
     </script>
-
 </body>
 </html>

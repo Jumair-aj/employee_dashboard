@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { bulkUploadEmployee, downloadExcelEmployee } from '../services/excelServices.js';
 import { logError, logInfo, logWarning } from '../index.js';
+import { log } from 'console';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,6 +29,7 @@ router.get('/', async (req, res) => {
     const limit = parseInt(req.query.limit) || 10;
     const offset = (page - 1) * limit;
     const employees = await getAllEmployees(salary, limit, offset)
+    logInfo(`Retrieved ${employees.employees.length} employees`);
     res.send(employees)
 })
 
@@ -38,9 +40,11 @@ router.post('/', async (req, res) => {
     const { name, salary, dob } = req.body
     try {
         const result = await addEmployee(name, salary, dob)
+        logInfo(`Added employee with ID: ${result.insertId}`);
         res.status(201).json({ id: result.insertId, name, salary, dob });
     }
     catch (error) {
+        logError(error);
         res.status(500).json({ error: error.message });
     }
 })
@@ -48,18 +52,24 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
     const { error } = employeeSchema.validate(req.body);
-    if (error) return res.status(400).json({ error: error.details[0].message });
+    if (error){
+        logError(error)
+        return res.status(400).json({ error: error.details[0].message });
+    }
 
     const { id } = req.params;
     const { name, salary, dob } = req.body;
     try {
         const result = await updateEmployee(name, salary, dob, id)
         if (result.affectedRows === 0) {
+            logError(`Failed to update employee with ID: ${id}`);
             return res.status(404).json({ message: 'Employee not found' });
         }
+        logInfo(`Updated employee with ID: ${id}`);
         res.json({ id, name, salary, dob });
     }
     catch (error) {
+        logError(error);
         res.status(500).json({ error: error.message });
     }
 })
@@ -74,6 +84,7 @@ router.delete('/:id', async (req, res) => {
             return res.status(404).json({ message: 'Employee not found' });
         }
     } catch (error) {
+        logError(error);
         res.status(500).json({ error: error.message });
     }
     logInfo(`Deleted employee with ID: ${id}`);
@@ -105,7 +116,10 @@ router.post('/bulk-upload', upload.single('file'), (req, res) => {
         return [emp.Name, dob, emp.Salary];
     });
     const { result, err } = bulkUploadEmployee(values)
-    if (err) return res.status(500).json({ error: 'Error importing employees' });
+    if (err) {
+        logError(err);
+        return res.status(500).json({ error: 'Error importing employees' });
+    }
     logInfo(`Imported ${values.length} employees from ${filePath}`);
     res.status(200).json({ message: 'Employees imported successfully' });
 
