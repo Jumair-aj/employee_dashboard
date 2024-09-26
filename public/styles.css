@@ -17,6 +17,13 @@
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f7fa;
+    --text-color: #333;
+    --error-color: #f44336;
+    --success-color: #4CAF50;
+}
 
 .dark-theme {
     --primary-color: #3498db;
@@ -43,6 +50,17 @@ body {
     transition: var(--transition);
 }
 
+
+.register-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
 .app-container {
     display: flex;
     min-height: 100vh;
@@ -50,11 +68,18 @@ body {
 
 .sidebar {
     width: var(--sidebar-width);
+    border-radius: var(--border-radius);
     background-color: var(--surface-color);
-    box-shadow: var(--box-shadow);
+}
+.sidebar-overlay{
+    width: var(--sidebar-width);
     padding: 1rem;
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
+    background-color: var(--surface-color);
+    height: 100vh;
+    position: fixed;
 }
 
 .sidebar-header {
@@ -426,3 +451,69 @@ th {
     }
 }
 
+.no-underline{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f7fa;
+    --text-color: #333;
+    --error-color: #f44336;
+    --success-color: #4CAF50;
+}
+
+
+.login {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+.register-form {
+    padding: 30px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+select.input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+
+
+.register-link{
+    margin-top: 23px;
+    text-align: center;
+}
+
+.btn-logout{
+    color: var(--text-color);
+}
+
+#exportExcelBtn{
+    background-color:var(--secondary-dark) ;
+}

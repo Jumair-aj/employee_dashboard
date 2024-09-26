@@ -1,45 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./styles.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-        :root {
-            --primary-color: #4a90e2;
-            --secondary-color: #f5f7fa;
-            --text-color: #333;
-            --error-color: #f44336;
-            --success-color: #4CAF50;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--secondary-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .login {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 100%;
-            max-width: 400px;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
         h2 {
             background-color: var(--primary-color);
@@ -48,32 +17,6 @@
             text-align: center;
             font-size: 24px;
             font-weight: 600;
-        }
-
-        .register-form {
-            padding: 30px;
-        }
-
-        .input {
-            width: 100%;
-            padding: 12px 15px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-        }
-
-        .input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        select.input {
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
         }
 
         .btn {
@@ -92,34 +35,17 @@
         .btn:hover {
             background-color: #3a7bc8;
         }
-
-        #toast-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        #toast-container > div {
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            color: #ffffff;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        #toast-container > div.show {
-            opacity: 1;
-        }
     </style>
 </head>
-<body>
+
+<body class="register-body">
     <div class="login">
         <h2>Register</h2>
         <form class="register-form" id="register-form">
             <input type="text" name="username" placeholder="Username" required class="input">
-            <input type="password" name="password" placeholder="Password" required class="input">
+            <input type="password" name="password" placeholder="Password" required class="input" id="password">
+            <input type="password" name="confirm-password" placeholder="Confirm Password" required class="input"
+                id="confirm-password">
             <select class="input" name="role" required>
                 <option value="" disabled selected>Select Role</option>
                 <option value="admin">Admin</option>
@@ -127,19 +53,24 @@
             </select>
             <input type="email" name="email" placeholder="Email" required class="input">
             <button type="submit" class="btn">Register</button>
+            <p class="register-link">Have an account?<a href="/" class="no-underline"> Log in </a></p>
         </form>
     </div>
     <div id="toast-container"></div>
 
     <script>
         document.getElementById('register-form').addEventListener('submit', async (e) => {
-            e.preventDefault(); 
+            e.preventDefault();
+            if (document.getElementById('password').value !== document.getElementById('confirm-password').value) {
+                showToast('Passwords do not match', 'error');
+                return;
+            }
             const formData = new FormData(e.target);
             const data = {
                 username: formData.get('username'),
                 password: formData.get('password'),
-                role: formData.get('password'),
-                email: formData.get('password')
+                role: formData.get('role'),
+                email: formData.get('email')
             };
 
             try {
@@ -154,7 +85,9 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-                    window.location.href ='/';
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 2000)
                 } else {
                     showToast(result.message, 'error');
                 }
@@ -163,23 +96,52 @@
             }
         });
 
-        function showToast(message, type) {
-            const toast = document.createElement('div');
-            toast.innerText = message;
-            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50'; 
-            toast.style.color = 'white';
-            toast.style.padding = '10px';
-            toast.style.marginBottom = '10px';
-            toast.style.borderRadius = '3px';
-            toast.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+        const toastContainer = document.getElementById('toast-container');
 
-            const toastContainer = document.getElementById('toast-container');
+        function createToastElement(message, type) {
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+
+            const icon = document.createElement('span');
+            icon.className = 'toast-icon';
+            icon.textContent = type === 'error' ? '❌' : type === 'success' ? '✅' : 'ℹ️';
+
+            const messageElement = document.createElement('span');
+            messageElement.className = 'toast-message';
+            messageElement.textContent = message;
+
+            const closeButton = document.createElement('button');
+            closeButton.className = 'toast-close';
+            closeButton.innerHTML = '&times;';
+            closeButton.addEventListener('click', () => removeToast(toast));
+
+            toast.appendChild(icon);
+            toast.appendChild(messageElement);
+            toast.appendChild(closeButton);
+
+            return toast;
+        }
+
+        function showToast(message, type = 'info') {
+            const toast = createToastElement(message, type);
             toastContainer.appendChild(toast);
 
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
+
+            toast.offsetHeight;
+
+            toast.classList.add('show');
+
+            setTimeout(() => removeToast(toast), 5000);
         }
+
+        function removeToast(toast) {
+            toast.classList.remove('show');
+            toast.addEventListener('transitionend', () => {
+                toast.remove();
+            });
+        }
+
     </script>
 </body>
+
 </html>

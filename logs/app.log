@@ -109,3 +109,146 @@
 2024-09-25T17:30:54.924Z [INFO]: Registered new user: admin
 2024-09-25T17:31:07.880Z [INFO]: Registered new user: user
 2024-09-25T18:14:30.501Z [INFO]: Retrieved 10 employees
+2024-09-26T07:35:20.873Z [INFO]: Application has started.
+2024-09-26T07:35:31.370Z [INFO]: Application has started.
+2024-09-26T07:53:26.496Z [INFO]: Application has started.
+2024-09-26T07:53:31.718Z [INFO]: Application has started.
+2024-09-26T07:53:56.016Z [ERROR]: User already exists: admin
+2024-09-26T07:56:31.253Z [INFO]: Application has started.
+2024-09-26T07:56:33.459Z [INFO]: Application has started.
+2024-09-26T07:57:02.346Z [INFO]: Application has started.
+2024-09-26T07:57:43.031Z [ERROR]: User already exists: admin
+2024-09-26T07:57:47.741Z [ERROR]: User already exists: admin1
+2024-09-26T07:57:51.149Z [ERROR]: User already exists: admin1
+2024-09-26T07:57:54.735Z [ERROR]: User already exists: admin1
+2024-09-26T07:58:34.519Z [INFO]: Application has started.
+2024-09-26T07:59:46.274Z [ERROR]: User already exists with username: admin1 or email: admin
+2024-09-26T07:59:55.567Z [INFO]: Registered new user: admin1
+2024-09-26T08:00:27.073Z [ERROR]: User already exists with username: admin2 or email: admin@gmail.com
+2024-09-26T08:00:32.595Z [INFO]: Registered new user: admin2
+2024-09-26T08:52:31.624Z [INFO]: Registered new user: admin
+2024-09-26T10:04:34.612Z [INFO]: User logged in: admin
+2024-09-26T10:04:35.136Z [INFO]: Retrieved 10 employees
+2024-09-26T10:04:37.977Z [INFO]: Retrieved 10 employees
+2024-09-26T10:05:04.463Z [INFO]: Retrieved 10 employees
+2024-09-26T10:05:07.560Z [INFO]: Retrieved 10 employees
+2024-09-26T10:06:33.372Z [INFO]: Retrieved 10 employees
+2024-09-26T10:06:34.127Z [INFO]: Retrieved 7 employees
+2024-09-26T10:07:04.789Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:04.944Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:05.009Z [INFO]: Retrieved 7 employees
+2024-09-26T10:07:06.080Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:09.610Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:09.659Z [INFO]: Retrieved 7 employees
+2024-09-26T10:07:43.468Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:45.327Z [INFO]: Retrieved 10 employees
+2024-09-26T10:07:45.376Z [INFO]: Retrieved 7 employees
+2024-09-26T10:08:56.721Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:02.694Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:02.734Z [INFO]: Retrieved 7 employees
+2024-09-26T10:09:13.517Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:14.179Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:15.742Z [INFO]: Retrieved 7 employees
+2024-09-26T10:09:18.395Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:19.594Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:20.823Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:40.513Z [INFO]: Retrieved 10 employees
+2024-09-26T10:09:40.878Z [INFO]: Retrieved 7 employees
+2024-09-26T10:10:49.138Z [INFO]: Retrieved 10 employees
+2024-09-26T10:10:54.996Z [INFO]: Retrieved 10 employees
+2024-09-26T10:10:57.847Z [INFO]: Retrieved 10 employees
+2024-09-26T10:10:58.781Z [INFO]: Retrieved 7 employees
+2024-09-26T10:14:20.887Z [INFO]: Retrieved 10 employees
+2024-09-26T10:14:22.065Z [INFO]: Retrieved 10 employees
+2024-09-26T10:14:22.329Z [INFO]: Retrieved 7 employees
+2024-09-26T10:16:15.342Z [INFO]: Retrieved 10 employees
+2024-09-26T10:16:18.855Z [INFO]: Retrieved 10 employees
+2024-09-26T10:16:19.084Z [INFO]: Retrieved 7 employees
+2024-09-26T10:16:33.334Z [INFO]: Retrieved 10 employees
+2024-09-26T10:16:37.415Z [INFO]: Retrieved 10 employees
+2024-09-26T10:16:47.118Z [INFO]: Retrieved 10 employees
+2024-09-26T10:16:53.543Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:13.148Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:18.140Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:26.809Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:28.615Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:29.147Z [INFO]: Retrieved 7 employees
+2024-09-26T10:17:39.017Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:44.402Z [INFO]: Retrieved 10 employees
+2024-09-26T10:17:50.068Z [INFO]: Retrieved 10 employees
+2024-09-26T10:19:26.907Z [INFO]: Retrieved 10 employees
+2024-09-26T10:19:32.029Z [INFO]: Retrieved 10 employees
+2024-09-26T10:20:00.395Z [INFO]: Retrieved 10 employees
+2024-09-26T10:20:03.473Z [INFO]: Retrieved 10 employees
+2024-09-26T10:20:03.740Z [INFO]: Retrieved 7 employees
+2024-09-26T10:20:08.048Z [INFO]: Retrieved 10 employees
+2024-09-26T10:20:15.580Z [INFO]: Retrieved 10 employees
+2024-09-26T10:21:04.943Z [INFO]: Application has started.
+2024-09-26T10:21:25.061Z [INFO]: Application has started.
+2024-09-26T10:21:31.913Z [INFO]: Application has started.
+2024-09-26T10:24:03.635Z [INFO]: Application has started.
+2024-09-26T10:24:07.701Z [INFO]: Application has started.
+2024-09-26T10:24:20.174Z [INFO]: Application has started.
+2024-09-26T10:34:18.837Z [INFO]: User Logged Out
+2024-09-26T10:34:24.914Z [INFO]: User created: Jumair Aj
+2024-09-26T10:34:44.424Z [INFO]: User Logged Out
+2024-09-26T10:34:46.617Z [INFO]: User found: Jumair Aj
+2024-09-26T10:34:53.010Z [INFO]: User Logged Out
+2024-09-26T10:34:57.747Z [INFO]: User logged in: admin
+2024-09-26T10:36:28.445Z [INFO]: User Logged Out
+2024-09-26T10:36:33.676Z [INFO]: User logged in: admin
+2024-09-26T10:36:38.543Z [INFO]: User Logged Out
+2024-09-26T10:37:03.815Z [INFO]: User logged in: admin
+2024-09-26T10:37:12.078Z [INFO]: Application has started.
+2024-09-26T10:37:20.167Z [INFO]: User Logged Out
+2024-09-26T10:37:29.147Z [INFO]: Application has started.
+2024-09-26T10:38:34.347Z [INFO]: Application has started.
+2024-09-26T10:50:37.631Z [INFO]: User logged in: admin
+2024-09-26T10:50:58.255Z [INFO]: User Logged Out
+2024-09-26T10:51:01.820Z [INFO]: User logged in: admin
+2024-09-26T10:51:19.904Z [INFO]: Application has started.
+2024-09-26T10:51:20.569Z [INFO]: Retrieved 10 employees
+2024-09-26T10:51:24.155Z [INFO]: User found: Jumair Aj
+2024-09-26T10:51:24.777Z [INFO]: Retrieved 10 employees
+2024-09-26T10:58:18.823Z [INFO]: Retrieved 10 employees
+2024-09-26T10:58:20.212Z [INFO]: Retrieved 10 employees
+2024-09-26T10:58:30.548Z [INFO]: Retrieved 10 employees
+2024-09-26T10:58:32.698Z [INFO]: User Logged Out
+2024-09-26T10:58:43.468Z [INFO]: Application has started.
+2024-09-26T11:03:11.060Z [INFO]: User logged in: admin
+2024-09-26T11:03:11.617Z [INFO]: Retrieved 10 employees
+2024-09-26T11:03:14.018Z [INFO]: User Logged Out
+2024-09-26T11:14:39.576Z [INFO]: User logged in: admin
+2024-09-26T11:14:40.104Z [INFO]: Retrieved 10 employees
+2024-09-26T11:15:44.765Z [INFO]: Retrieved 10 employees
+2024-09-26T11:15:52.164Z [INFO]: Retrieved 10 employees
+2024-09-26T11:16:35.311Z [INFO]: Retrieved 10 employees
+2024-09-26T11:16:36.079Z [INFO]: Retrieved 10 employees
+2024-09-26T11:17:15.398Z [INFO]: Retrieved 10 employees
+2024-09-26T11:17:15.595Z [INFO]: Retrieved 7 employees
+2024-09-26T11:17:18.305Z [INFO]: Retrieved 10 employees
+2024-09-26T11:23:34.416Z [INFO]: Retrieved 10 employees
+2024-09-26T11:23:38.994Z [INFO]: Retrieved 10 employees
+2024-09-26T14:02:50.656Z [INFO]: Retrieved 10 employees
+2024-09-26T14:02:52.469Z [INFO]: User Logged Out
+2024-09-26T14:03:10.108Z [INFO]: Registered new user: test
+2024-09-26T14:03:57.494Z [INFO]: User logged in: admin
+2024-09-26T14:03:57.891Z [INFO]: Retrieved 10 employees
+2024-09-26T14:05:20.575Z [INFO]: Retrieved 10 employees
+2024-09-26T14:05:22.754Z [INFO]: User Logged Out
+2024-09-26T14:05:32.874Z [INFO]: User logged in: admin
+2024-09-26T14:05:35.289Z [INFO]: Retrieved 10 employees
+2024-09-26T14:05:57.056Z [INFO]: User Logged Out
+2024-09-26T14:06:03.573Z [INFO]: User logged in: admin
+2024-09-26T14:06:05.881Z [INFO]: Retrieved 10 employees
+2024-09-26T15:49:05.248Z [INFO]: Added employee with ID: undefined
+2024-09-26T15:49:05.271Z [INFO]: Retrieved 10 employees
+2024-09-26T15:49:51.241Z [INFO]: Application has started.
+2024-09-26T15:50:01.227Z [INFO]: Application has started.
+2024-09-26T15:50:10.146Z [INFO]: Application has started.
+2024-09-26T15:50:13.124Z [INFO]: Application has started.
+2024-09-26T15:50:13.848Z [INFO]: Retrieved 10 employees
+2024-09-26T15:50:17.462Z [INFO]: User logged in: admin
+2024-09-26T15:50:20.010Z [INFO]: Retrieved 10 employees
+2024-09-26T15:50:48.150Z [INFO]: Added employee with ID: undefined
+2024-09-26T15:50:48.172Z [INFO]: Retrieved 10 employees

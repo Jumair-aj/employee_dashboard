@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Employee Dashboard - Login</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
         :root {
             --primary-color: #4a90e2;
             --secondary-color: #f5f7fa;
@@ -163,33 +165,6 @@
             text-decoration: underline;
         }
 
-        #toast-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .toast {
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .toast.show {
-            opacity: 1;
-        }
-
-        .toast-success {
-            background-color: #4CAF50;
-        }
-
-        .toast-error {
-            background-color: #f44336;
-        }
 
         @media (min-width: 768px) {
             .login-image {
@@ -219,7 +194,8 @@
                 <div class="alternative-login">
                     <p>Or login with</p>
                     <div class="login-options">
-                        <a href="/auth/google" class="btn btn-google"><i class="fab fa-google"></i> Google</a>
+                        <a href="/auth/google" class="btn btn-google no-underline"><i class="fab fa-google"></i>
+                            Google</a>
                         <button id="adLoginBtn" class="btn btn-ad"><i class="fas fa-building"></i> Active
                             Directory</button>
                     </div>
@@ -256,7 +232,9 @@
                 const result = await response.json();
                 if (response.ok) {
                     showToast(result.message, 'success');
-                    window.location.href = result.redirectUrl;
+                    setTimeout(() => {
+                        window.location.href = result.redirectUrl;
+                    },2000)
                 } else {
                     showToast(result.message, 'error');
                 }
@@ -296,23 +274,51 @@
             }
         });
 
-        function showToast(message, type) {
-            const toast = document.createElement('div');
-            toast.innerText = message;
-            toast.style.backgroundColor = type === 'error' ? '#f44336' : '#4CAF50';
-            toast.style.color = 'white';
-            toast.style.padding = '10px';
-            toast.style.marginBottom = '10px';
-            toast.style.borderRadius = '3px';
-            toast.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+        const toastContainer = document.getElementById('toast-container');
 
-            const toastContainer = document.getElementById('toast-container');
+        function createToastElement(message, type) {
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+
+            const icon = document.createElement('span');
+            icon.className = 'toast-icon';
+            icon.textContent = type === 'error' ? '❌' : type === 'success' ? '✅' : 'ℹ️';
+
+            const messageElement = document.createElement('span');
+            messageElement.className = 'toast-message';
+            messageElement.textContent = message;
+
+            const closeButton = document.createElement('button');
+            closeButton.className = 'toast-close';
+            closeButton.innerHTML = '&times;';
+            closeButton.addEventListener('click', () => removeToast(toast));
+
+            toast.appendChild(icon);
+            toast.appendChild(messageElement);
+            toast.appendChild(closeButton);
+
+            return toast;
+        }
+
+        function showToast(message, type = 'info') {
+            const toast = createToastElement(message, type);
             toastContainer.appendChild(toast);
 
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
+
+            toast.offsetHeight;
+
+            toast.classList.add('show');
+
+            setTimeout(() => removeToast(toast), 5000);
         }
+
+        function removeToast(toast) {
+            toast.classList.remove('show');
+            toast.addEventListener('transitionend', () => {
+                toast.remove();
+            });
+        }
+
     </script>
 </body>
 

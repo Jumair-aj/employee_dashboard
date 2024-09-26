@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { bulkUploadEmployee, downloadExcelEmployee } from '../services/excelServices.js';
 import { logError, logInfo, logWarning } from '../index.js';
-import { log } from 'console';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -136,8 +136,7 @@ router.get('/export/excel/:salary', async (req, res) => {
         res.send(excelBuffer);
         logInfo(`Exported to Excel: ${filename}`);
     } catch (error) {
-        logError(error);
-        console.error('Error exporting to Excel:', error);
+        logError('Error exporting to Excel:', error);
         res.status(500).json({ message: 'Internal server error' });
     }
 });

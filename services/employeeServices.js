@@ -4,7 +4,6 @@ export const getAllEmployees = async (salary, limit, offset) => {
     if (salary) {
         const [employees] = await db.query("SELECT * FROM employee where salary > ? LIMIT ? OFFSET ?", [salary, limit, offset]);
         const [total] = await db.query('SELECT COUNT(*) AS total FROM employee where salary > ?', [salary])
-        console.log(employees,total)
         return {employees, total:total[0].total}
     }
     else {

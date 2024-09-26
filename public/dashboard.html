@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="app-container">
         <nav class="sidebar">
-            <div class="sidebar-header">
-                <i class="fas fa-users-cog"></i>
-                <h1>EM Dashboard</h1>
-            </div>
-            <ul class="sidebar-menu">
-                <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
-            </ul>
-            <div class="sidebar-footer">
-                <button id="themeToggleBtn" class="btn btn-icon" onclick="toggleTheme()">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a id="logoutBtn" class="btn btn-icon" href="/logout">
-                    <i class="fas fa-sign-out-alt"></i>
-                </a>
+            <div class="sidebar-overlay">
+                <div class="sidebar-header">
+                    <i class="fas fa-users-cog"></i>
+                    <h1>EM Dashboard</h1>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <button id="themeToggleBtn" class="btn btn-icon" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a id="logoutBtn" class="btn btn-icon no-underline btn-logout" href="/logout">
+                        <i class="fas fa-sign-out-alt "></i>
+                    </a>
+                </div>
             </div>
         </nav>
 
@@ -75,7 +79,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modalTitle">Add Employee</h2>
-            
+
             <div class="form-group excelUploadDiv">
                 <label for="excelUpload">Upload Excel File:</label>
                 <input type="file" id="excelUpload" accept=".xlsx, .xls" />
@@ -117,4 +121,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script src="script.js" defer></script>
 </body>
+
 </html>

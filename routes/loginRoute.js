@@ -73,7 +73,6 @@ router.post('/auth/login/ad', (req, res) => {
     ad.authenticate(username, password, (err, auth) => {
         if (err) {
             logError(err);
-            console.log(err)
             return res.status(500).json({ message: 'An error occurred during authentication' });
         }
         if (auth) {
@@ -88,7 +87,6 @@ router.post('/auth/login/ad', (req, res) => {
                     return res.status(401).json({ message: 'User not found' });
                 }
 
-                // Create a session for the user
                 req.login(user, (err) => {
                     if (err) {
                         logError(err);
@@ -208,6 +206,12 @@ passport.deserializeUser(async (id, done) => {
 router.post('/auth/register', async (req, res) => {
     try {
         const { username, password, email, role } = req.body;
+        const [rows] = await db.query('SELECT * FROM users WHERE username = ? OR email = ?', [username,email]);
+        if (rows.length > 0) {
+            logError(`User already exists with username: ${username} or email: ${email}`)
+            return res.status(409).send({ message: 'User already exists' });
+        }
+
         const hashedPassword = await bcrypt.hash(password, 10);
         await db.query('INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)',
             [username, hashedPassword, email, role]);

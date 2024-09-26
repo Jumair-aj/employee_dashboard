@@ -209,7 +209,7 @@ employeeForm.onsubmit = (e) => {
                 employees = [];
                 fetchEmployees();
                 closeModal();
-                showToast('Employee updated successfully!');
+                showToast('Employee updated successfully!', 'success');
             });
     } else {
         fetch('/api/employees', {
@@ -222,7 +222,7 @@ employeeForm.onsubmit = (e) => {
                 employees = []
                 fetchEmployees();
                 closeModal();
-                showToast('Employee added successfully!');
+                showToast('Employee added successfully!','success');
             });
     }
 };
@@ -323,28 +323,7 @@ employeeForm.addEventListener('submit', async (e) => {
         } else {
             showToast('Error uploading employees');
         }
-    } 
-    // else {
-    //     const newEmployee = {
-    //         name: nameInput.value,
-    //         dob: dobInput.value,
-    //         salary: salaryInput.value
-    //     };
-
-    //     const response = await fetch('/api/employees', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify(newEmployee)
-    //     });
-
-    //     if (response.ok) {
-    //         showToast('Employee added successfully!');
-    //         modal.style.display = 'none';
-    //         fetchEmployees();
-    //     } else {
-    //         showToast('Error adding employee');
-    //     }
-    // }
+    }
 });
 
 
@@ -378,7 +357,7 @@ function showToast(message, type = 'info') {
     const toast = createToastElement(message, type);
     toastContainer.appendChild(toast);
     
-    // Trigger reflow to enable animation
+
     toast.offsetHeight;
     
     toast.classList.add('show');
@@ -393,10 +372,7 @@ function removeToast(toast) {
     });
 }
 
-// Example usage:
-// showToast('Success message', 'success');
-// showToast('Error message', 'error');
-// showToast('Info message', 'info');
+
 document.getElementById('exportExcelBtn').addEventListener('click', async () => {
     const salary = parseFloat(salaryRangeInput.value);
     if (salary) {
@@ -412,12 +388,12 @@ document.getElementById('exportExcelBtn').addEventListener('click', async () => 
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
-                showToast('Downloaded Successfully');
+                showToast('Downloaded Successfully','success');
             } else {
                 showToast('Failed to export employees');
             }
         } catch (error) {
-            console.error('Error exporting Excel:', error);
+            showToast('Error exporting Excel:', 'error');
         }
     }
     else{
@@ -426,4 +402,5 @@ document.getElementById('exportExcelBtn').addEventListener('click', async () => 
 });
 
 fetchEmployees();
+
 
