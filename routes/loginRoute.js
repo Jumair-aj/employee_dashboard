@@ -153,10 +153,10 @@ passport.use(new LocalStrategy(async (username, password, done) => {
             const user = rows[0];
             const isMatch = await bcrypt.compare(password, user.password);
             if (isMatch) {
-                logInfo(`User logged in: ${username}`);
+                logInfo(`Login successful for user: ${username}`);
                 return done(null, user);
             } else {
-                logError(`Incorrect password: ${username}`);
+                logInfo(`Login failed for user: ${username} - Reason: Invalid Password`);
                 return done(null, false, { message: 'Incorrect password.' });
             }
         } else {

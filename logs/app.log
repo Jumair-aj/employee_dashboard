@@ -1,254 +1,239 @@
-2024-09-25T14:32:03.163Z [INFO]: Application has started.
-2024-09-25T14:59:26.196Z [INFO]: Application has started.
-2024-09-25T15:10:40.845Z [INFO]: Application has started.
-2024-09-25T15:20:43.847Z [INFO]: Application has started.
-2024-09-25T15:20:52.874Z [INFO]: Application has started.
-2024-09-25T15:20:57.996Z [INFO]: Application has started.
-2024-09-25T15:24:22.390Z [INFO]: Application has started.
-2024-09-25T15:27:25.227Z [INFO]: Application has started.
-2024-09-25T15:29:34.534Z [ERROR]: AggregateError
-2024-09-25T15:29:34.538Z [ERROR]: AggregateError
-2024-09-25T15:29:38.594Z [ERROR]: AggregateError
-2024-09-25T15:29:38.595Z [ERROR]: AggregateError
-2024-09-25T15:29:39.927Z [ERROR]: AggregateError
-2024-09-25T15:29:39.928Z [ERROR]: AggregateError
-2024-09-25T15:29:40.232Z [ERROR]: AggregateError
-2024-09-25T15:29:40.234Z [ERROR]: AggregateError
-2024-09-25T15:29:40.391Z [ERROR]: AggregateError
-2024-09-25T15:29:40.455Z [ERROR]: AggregateError
-2024-09-25T15:29:40.547Z [ERROR]: AggregateError
-2024-09-25T15:29:40.548Z [ERROR]: AggregateError
-2024-09-25T15:29:44.164Z [ERROR]: AggregateError
-2024-09-25T15:29:44.166Z [ERROR]: AggregateError
-2024-09-25T15:31:47.406Z [INFO]: Application has started.
-2024-09-25T15:31:59.772Z [INFO]: User Logged Out
-2024-09-25T15:32:36.155Z [ERROR]: AggregateError
-2024-09-25T15:32:36.178Z [ERROR]: AggregateError
-2024-09-25T15:33:29.230Z [INFO]: Application has started.
-2024-09-25T15:34:20.796Z [INFO]: Application has started.
-2024-09-25T15:34:56.282Z [ERROR]: AggregateError
-2024-09-25T15:34:56.286Z [ERROR]: AggregateError
-2024-09-25T15:35:59.755Z [INFO]: Application has started.
-2024-09-25T15:36:38.256Z [ERROR]: AggregateError
-2024-09-25T15:36:38.260Z [ERROR]: AggregateError
-2024-09-25T15:41:56.698Z [INFO]: Application has started.
-2024-09-25T15:42:08.472Z [INFO]: Application has started.
-2024-09-25T15:52:23.909Z [INFO]: Application has started.
-2024-09-25T15:53:20.422Z [ERROR]: AggregateError
-2024-09-25T15:54:42.926Z [INFO]: Application has started.
-2024-09-25T15:55:07.509Z [ERROR]: AggregateError
-2024-09-25T15:57:04.751Z [INFO]: Application has started.
-2024-09-25T15:57:37.508Z [ERROR]: AggregateError
-2024-09-25T16:39:53.494Z [INFO]: Application has started.
-2024-09-25T16:41:30.563Z [INFO]: User logged in: admin
-2024-09-25T16:41:30.771Z [INFO]: Retrieved 10 employees
-2024-09-25T16:45:28.051Z [INFO]: Retrieved 10 employees
-2024-09-25T16:46:07.264Z [INFO]: Retrieved 10 employees
-2024-09-25T16:46:28.398Z [INFO]: Updated employee with ID: 1
-2024-09-25T16:46:28.407Z [INFO]: Retrieved 10 employees
-2024-09-25T16:46:30.488Z [INFO]: Retrieved 10 employees
-2024-09-25T16:46:31.453Z [INFO]: Retrieved 7 employees
-2024-09-25T16:52:17.758Z [INFO]: Application has started.
-2024-09-25T16:52:34.186Z [INFO]: Retrieved 10 employees
-2024-09-25T16:52:39.364Z [INFO]: User logged in: admin
-2024-09-25T16:52:39.563Z [INFO]: Retrieved 10 employees
-2024-09-25T16:52:46.955Z [INFO]: Updated employee with ID: 1
-2024-09-25T16:52:46.965Z [INFO]: Retrieved 10 employees
-2024-09-25T16:52:59.826Z [INFO]: Retrieved 10 employees
-2024-09-25T16:53:00.483Z [INFO]: Retrieved 10 employees
-2024-09-25T16:53:00.939Z [INFO]: Retrieved 10 employees
-2024-09-25T16:53:02.517Z [INFO]: Exported to Excel: employees-above-10000.xlsx
-2024-09-25T16:53:03.238Z [INFO]: Exported to Excel: employees-above-10000.xlsx
-2024-09-25T16:53:04.775Z [INFO]: Exported to Excel: employees-above-10000.xlsx
-2024-09-25T16:57:01.942Z [INFO]: Exported to Excel: employees-above-10000.xlsx
-2024-09-25T16:57:07.140Z [INFO]: User Logged Out
-2024-09-25T17:04:49.526Z [INFO]: Application has started.
-2024-09-25T17:04:50.617Z [INFO]: Registered new user: test
-2024-09-25T17:04:57.943Z [INFO]: Registered new user: test
-2024-09-25T17:05:08.379Z [INFO]: Registered new user: test
-2024-09-25T17:05:35.690Z [INFO]: Registered new user: test
-2024-09-25T17:07:08.326Z [INFO]: Registered new user: test
-2024-09-25T17:07:18.761Z [INFO]: Registered new user: test1
-2024-09-25T17:08:05.462Z [INFO]: Application has started.
-2024-09-25T17:08:09.152Z [INFO]: Registered new user: test2
-2024-09-25T17:09:17.684Z [INFO]: Application has started.
-2024-09-25T17:09:45.511Z [INFO]: Registered new user: test3
-2024-09-25T17:09:48.446Z [INFO]: Registered new user: test3
-2024-09-25T17:10:17.725Z [INFO]: Registered new user: test3
-2024-09-25T17:10:30.432Z [INFO]: Registered new user: test4
-2024-09-25T17:11:07.318Z [INFO]: Registered new user: test5
-2024-09-25T17:13:11.859Z [INFO]: Application has started.
-2024-09-25T17:13:29.613Z [INFO]: Application has started.
-2024-09-25T17:14:48.002Z [INFO]: Application has started.
-2024-09-25T17:18:44.485Z [INFO]: Application has started.
-2024-09-25T17:18:47.916Z [INFO]: Application has started.
-2024-09-25T17:19:53.849Z [INFO]: Registered new user: test6
-2024-09-25T17:20:01.703Z [INFO]: Registered new user: test6
-2024-09-25T17:20:07.474Z [INFO]: Registered new user: test6
-2024-09-25T17:20:08.209Z [INFO]: Registered new user: test6
-2024-09-25T17:20:10.268Z [INFO]: Registered new user: test6
-2024-09-25T17:20:10.441Z [INFO]: Registered new user: test6
-2024-09-25T17:20:10.602Z [INFO]: Registered new user: test6
-2024-09-25T17:20:27.160Z [INFO]: Registered new user: test7
-2024-09-25T17:20:28.601Z [INFO]: Registered new user: test7
-2024-09-25T17:20:31.034Z [INFO]: Registered new user: test7
-2024-09-25T17:21:31.042Z [INFO]: Registered new user: test
-2024-09-25T17:21:40.443Z [INFO]: Registered new user: test
-2024-09-25T17:21:54.866Z [INFO]: Registered new user: test
-2024-09-25T17:22:23.265Z [INFO]: Registered new user: test
-2024-09-25T17:22:50.688Z [INFO]: Application has started.
-2024-09-25T17:22:56.827Z [INFO]: Registered new user: test
-2024-09-25T17:23:03.984Z [INFO]: Registered new user: test
-2024-09-25T17:27:14.663Z [INFO]: Registered new user: test
-2024-09-25T17:27:18.169Z [INFO]: Registered new user: test
-2024-09-25T17:27:43.429Z [INFO]: Registered new user: test
-2024-09-25T17:29:27.466Z [INFO]: Application has started.
-2024-09-25T17:29:34.677Z [INFO]: Application has started.
-2024-09-25T17:29:36.007Z [INFO]: Application has started.
-2024-09-25T17:30:22.248Z [INFO]: Registered new user: test
-2024-09-25T17:30:54.924Z [INFO]: Registered new user: admin
-2024-09-25T17:31:07.880Z [INFO]: Registered new user: user
-2024-09-25T18:14:30.501Z [INFO]: Retrieved 10 employees
-2024-09-26T07:35:20.873Z [INFO]: Application has started.
-2024-09-26T07:35:31.370Z [INFO]: Application has started.
-2024-09-26T07:53:26.496Z [INFO]: Application has started.
-2024-09-26T07:53:31.718Z [INFO]: Application has started.
-2024-09-26T07:53:56.016Z [ERROR]: User already exists: admin
-2024-09-26T07:56:31.253Z [INFO]: Application has started.
-2024-09-26T07:56:33.459Z [INFO]: Application has started.
-2024-09-26T07:57:02.346Z [INFO]: Application has started.
-2024-09-26T07:57:43.031Z [ERROR]: User already exists: admin
-2024-09-26T07:57:47.741Z [ERROR]: User already exists: admin1
-2024-09-26T07:57:51.149Z [ERROR]: User already exists: admin1
-2024-09-26T07:57:54.735Z [ERROR]: User already exists: admin1
-2024-09-26T07:58:34.519Z [INFO]: Application has started.
-2024-09-26T07:59:46.274Z [ERROR]: User already exists with username: admin1 or email: admin
-2024-09-26T07:59:55.567Z [INFO]: Registered new user: admin1
-2024-09-26T08:00:27.073Z [ERROR]: User already exists with username: admin2 or email: admin@gmail.com
-2024-09-26T08:00:32.595Z [INFO]: Registered new user: admin2
-2024-09-26T08:52:31.624Z [INFO]: Registered new user: admin
-2024-09-26T10:04:34.612Z [INFO]: User logged in: admin
-2024-09-26T10:04:35.136Z [INFO]: Retrieved 10 employees
-2024-09-26T10:04:37.977Z [INFO]: Retrieved 10 employees
-2024-09-26T10:05:04.463Z [INFO]: Retrieved 10 employees
-2024-09-26T10:05:07.560Z [INFO]: Retrieved 10 employees
-2024-09-26T10:06:33.372Z [INFO]: Retrieved 10 employees
-2024-09-26T10:06:34.127Z [INFO]: Retrieved 7 employees
-2024-09-26T10:07:04.789Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:04.944Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:05.009Z [INFO]: Retrieved 7 employees
-2024-09-26T10:07:06.080Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:09.610Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:09.659Z [INFO]: Retrieved 7 employees
-2024-09-26T10:07:43.468Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:45.327Z [INFO]: Retrieved 10 employees
-2024-09-26T10:07:45.376Z [INFO]: Retrieved 7 employees
-2024-09-26T10:08:56.721Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:02.694Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:02.734Z [INFO]: Retrieved 7 employees
-2024-09-26T10:09:13.517Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:14.179Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:15.742Z [INFO]: Retrieved 7 employees
-2024-09-26T10:09:18.395Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:19.594Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:20.823Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:40.513Z [INFO]: Retrieved 10 employees
-2024-09-26T10:09:40.878Z [INFO]: Retrieved 7 employees
-2024-09-26T10:10:49.138Z [INFO]: Retrieved 10 employees
-2024-09-26T10:10:54.996Z [INFO]: Retrieved 10 employees
-2024-09-26T10:10:57.847Z [INFO]: Retrieved 10 employees
-2024-09-26T10:10:58.781Z [INFO]: Retrieved 7 employees
-2024-09-26T10:14:20.887Z [INFO]: Retrieved 10 employees
-2024-09-26T10:14:22.065Z [INFO]: Retrieved 10 employees
-2024-09-26T10:14:22.329Z [INFO]: Retrieved 7 employees
-2024-09-26T10:16:15.342Z [INFO]: Retrieved 10 employees
-2024-09-26T10:16:18.855Z [INFO]: Retrieved 10 employees
-2024-09-26T10:16:19.084Z [INFO]: Retrieved 7 employees
-2024-09-26T10:16:33.334Z [INFO]: Retrieved 10 employees
-2024-09-26T10:16:37.415Z [INFO]: Retrieved 10 employees
-2024-09-26T10:16:47.118Z [INFO]: Retrieved 10 employees
-2024-09-26T10:16:53.543Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:13.148Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:18.140Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:26.809Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:28.615Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:29.147Z [INFO]: Retrieved 7 employees
-2024-09-26T10:17:39.017Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:44.402Z [INFO]: Retrieved 10 employees
-2024-09-26T10:17:50.068Z [INFO]: Retrieved 10 employees
-2024-09-26T10:19:26.907Z [INFO]: Retrieved 10 employees
-2024-09-26T10:19:32.029Z [INFO]: Retrieved 10 employees
-2024-09-26T10:20:00.395Z [INFO]: Retrieved 10 employees
-2024-09-26T10:20:03.473Z [INFO]: Retrieved 10 employees
-2024-09-26T10:20:03.740Z [INFO]: Retrieved 7 employees
-2024-09-26T10:20:08.048Z [INFO]: Retrieved 10 employees
-2024-09-26T10:20:15.580Z [INFO]: Retrieved 10 employees
-2024-09-26T10:21:04.943Z [INFO]: Application has started.
-2024-09-26T10:21:25.061Z [INFO]: Application has started.
-2024-09-26T10:21:31.913Z [INFO]: Application has started.
-2024-09-26T10:24:03.635Z [INFO]: Application has started.
-2024-09-26T10:24:07.701Z [INFO]: Application has started.
-2024-09-26T10:24:20.174Z [INFO]: Application has started.
-2024-09-26T10:34:18.837Z [INFO]: User Logged Out
-2024-09-26T10:34:24.914Z [INFO]: User created: Jumair Aj
-2024-09-26T10:34:44.424Z [INFO]: User Logged Out
-2024-09-26T10:34:46.617Z [INFO]: User found: Jumair Aj
-2024-09-26T10:34:53.010Z [INFO]: User Logged Out
-2024-09-26T10:34:57.747Z [INFO]: User logged in: admin
-2024-09-26T10:36:28.445Z [INFO]: User Logged Out
-2024-09-26T10:36:33.676Z [INFO]: User logged in: admin
-2024-09-26T10:36:38.543Z [INFO]: User Logged Out
-2024-09-26T10:37:03.815Z [INFO]: User logged in: admin
-2024-09-26T10:37:12.078Z [INFO]: Application has started.
-2024-09-26T10:37:20.167Z [INFO]: User Logged Out
-2024-09-26T10:37:29.147Z [INFO]: Application has started.
-2024-09-26T10:38:34.347Z [INFO]: Application has started.
-2024-09-26T10:50:37.631Z [INFO]: User logged in: admin
-2024-09-26T10:50:58.255Z [INFO]: User Logged Out
-2024-09-26T10:51:01.820Z [INFO]: User logged in: admin
-2024-09-26T10:51:19.904Z [INFO]: Application has started.
-2024-09-26T10:51:20.569Z [INFO]: Retrieved 10 employees
-2024-09-26T10:51:24.155Z [INFO]: User found: Jumair Aj
-2024-09-26T10:51:24.777Z [INFO]: Retrieved 10 employees
-2024-09-26T10:58:18.823Z [INFO]: Retrieved 10 employees
-2024-09-26T10:58:20.212Z [INFO]: Retrieved 10 employees
-2024-09-26T10:58:30.548Z [INFO]: Retrieved 10 employees
-2024-09-26T10:58:32.698Z [INFO]: User Logged Out
-2024-09-26T10:58:43.468Z [INFO]: Application has started.
-2024-09-26T11:03:11.060Z [INFO]: User logged in: admin
-2024-09-26T11:03:11.617Z [INFO]: Retrieved 10 employees
-2024-09-26T11:03:14.018Z [INFO]: User Logged Out
-2024-09-26T11:14:39.576Z [INFO]: User logged in: admin
-2024-09-26T11:14:40.104Z [INFO]: Retrieved 10 employees
-2024-09-26T11:15:44.765Z [INFO]: Retrieved 10 employees
-2024-09-26T11:15:52.164Z [INFO]: Retrieved 10 employees
-2024-09-26T11:16:35.311Z [INFO]: Retrieved 10 employees
-2024-09-26T11:16:36.079Z [INFO]: Retrieved 10 employees
-2024-09-26T11:17:15.398Z [INFO]: Retrieved 10 employees
-2024-09-26T11:17:15.595Z [INFO]: Retrieved 7 employees
-2024-09-26T11:17:18.305Z [INFO]: Retrieved 10 employees
-2024-09-26T11:23:34.416Z [INFO]: Retrieved 10 employees
-2024-09-26T11:23:38.994Z [INFO]: Retrieved 10 employees
-2024-09-26T14:02:50.656Z [INFO]: Retrieved 10 employees
-2024-09-26T14:02:52.469Z [INFO]: User Logged Out
-2024-09-26T14:03:10.108Z [INFO]: Registered new user: test
-2024-09-26T14:03:57.494Z [INFO]: User logged in: admin
-2024-09-26T14:03:57.891Z [INFO]: Retrieved 10 employees
-2024-09-26T14:05:20.575Z [INFO]: Retrieved 10 employees
-2024-09-26T14:05:22.754Z [INFO]: User Logged Out
-2024-09-26T14:05:32.874Z [INFO]: User logged in: admin
-2024-09-26T14:05:35.289Z [INFO]: Retrieved 10 employees
-2024-09-26T14:05:57.056Z [INFO]: User Logged Out
-2024-09-26T14:06:03.573Z [INFO]: User logged in: admin
-2024-09-26T14:06:05.881Z [INFO]: Retrieved 10 employees
-2024-09-26T15:49:05.248Z [INFO]: Added employee with ID: undefined
-2024-09-26T15:49:05.271Z [INFO]: Retrieved 10 employees
-2024-09-26T15:49:51.241Z [INFO]: Application has started.
-2024-09-26T15:50:01.227Z [INFO]: Application has started.
-2024-09-26T15:50:10.146Z [INFO]: Application has started.
-2024-09-26T15:50:13.124Z [INFO]: Application has started.
-2024-09-26T15:50:13.848Z [INFO]: Retrieved 10 employees
-2024-09-26T15:50:17.462Z [INFO]: User logged in: admin
-2024-09-26T15:50:20.010Z [INFO]: Retrieved 10 employees
-2024-09-26T15:50:48.150Z [INFO]: Added employee with ID: undefined
-2024-09-26T15:50:48.172Z [INFO]: Retrieved 10 employees
+[INFO] [2024-09-30T12:26:44.428Z] - Application has started.
+[INFO] [2024-09-30T12:27:33.730Z] - Application has started.
+[INFO] [2024-09-30T12:28:25.070Z] - Application has started.
+[INFO] [2024-09-30T12:28:36.066Z] - Application has started.
+[INFO] [2024-09-30T12:28:52.345Z] - Application has started.
+[INFO] [2024-09-30T12:29:01.319Z] - Application has started.
+[INFO] [2024-09-30T12:29:14.721Z] - Application has started.
+[INFO] [2024-09-30T12:29:47.851Z] - Application has started.
+[INFO] [2024-09-30T12:29:53.728Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:29:58.832Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:30:23.747Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:30:24.959Z] - Retrieved 9 employees
+[INFO] [2024-09-30T12:30:32.910Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:30:33.825Z] - Retrieved 1 employees
+[INFO] [2024-09-30T12:30:36.581Z] - Exported to Excel: employees-above-50000.xlsx
+[INFO] [2024-09-30T12:30:50.311Z] - Imported 11 employees from D:\Jumair\Development\Backend\employee\uploads\cd8090624536dbc30fae145cc75aa478
+[INFO] [2024-09-30T12:30:50.315Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:32:51.709Z] - Application has started.
+[INFO] [2024-09-30T12:32:55.502Z] - Retrieved 1 employees
+[INFO] [2024-09-30T12:32:56.693Z] - Imported 11 employees from D:\Jumair\Development\Backend\employee\uploads\a20aaf1541891fbfb894146d848b3ffb
+[INFO] [2024-09-30T12:32:56.698Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:35:50.349Z] - Application has started.
+[INFO] [2024-09-30T12:35:56.995Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:36:01.206Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:36:02.397Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:36:11.544Z] - Imported 11 employees from D:\Jumair\Development\Backend\employee\uploads\e88614e5a397669d1eccf424a10f5425
+[INFO] [2024-09-30T12:37:13.929Z] - Application has started.
+[INFO] [2024-09-30T12:37:24.112Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:37:28.673Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:37:29.838Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:37:32.996Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:37:33.442Z] - Retrieved 9 employees
+[INFO] [2024-09-30T12:37:45.722Z] - Imported 11 employees from D:\Jumair\Development\Backend\employee\uploads\dbc23776011c67137170eb65932cf1d3
+[INFO] [2024-09-30T12:38:15.534Z] - Application has started.
+[INFO] [2024-09-30T12:38:40.734Z] - Application has started.
+[INFO] [2024-09-30T12:38:41.435Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:38:46.234Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:38:47.400Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:38:54.905Z] - Imported 11 employees from D:\Jumair\Development\Backend\employee\uploads\ab44a68f09f0911cc0d8de2878ffad3f
+[INFO] [2024-09-30T12:40:44.258Z] - Application has started.
+[INFO] [2024-09-30T12:40:50.191Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:40:54.946Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:40:56.147Z] - Retrieved 10 employees
+[ERROR] [2024-09-30T12:41:02.163Z] - Error: Incorrect date value: '15/2/1995' for column 'dob' at row 1
+[INFO] [2024-09-30T12:41:29.922Z] - Application has started.
+[ERROR] [2024-09-30T12:41:32.363Z] - Error: Incorrect date value: '15/2/1995' for column 'dob' at row 1
+[INFO] [2024-09-30T12:41:32.368Z] - Successfully deleted file: D:\Jumair\Development\Backend\employee\uploads\e907472e9d2a6a071c7f53ed6e8aad20
+[INFO] [2024-09-30T12:43:36.280Z] - Application has started.
+[ERROR] [2024-09-30T12:43:38.146Z] - Error: Incorrect date value: '15/2/1995' for column 'dob' at row 1
+[INFO] [2024-09-30T12:43:38.151Z] - Successfully deleted file: D:\Jumair\Development\Backend\employee\uploads\5969614cab757fc3283cc7b799384a99
+[INFO] [2024-09-30T12:44:30.357Z] - Application has started.
+[INFO] [2024-09-30T12:44:42.364Z] - Application has started.
+[INFO] [2024-09-30T12:44:51.833Z] - Application has started.
+[ERROR] [2024-09-30T12:44:54.857Z] - Error: Error processing row for Diana: Invalid date format: 15/2/1995
+[INFO] [2024-09-30T12:44:54.863Z] - Successfully deleted file: D:\Jumair\Development\Backend\employee\uploads\e2af276b7f37ab3dda9e7e4b024a61e6
+[ERROR] [2024-09-30T12:46:24.711Z] - Error: Error processing row for Jumair: Invalid date format: undefined
+[INFO] [2024-09-30T12:46:24.712Z] - Successfully deleted file: D:\Jumair\Development\Backend\employee\uploads\f65463b07b1cba568e34f4793d40c732
+[INFO] [2024-09-30T12:46:46.911Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:46:51.560Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:46:52.828Z] - Retrieved 10 employees
+[ERROR] [2024-09-30T12:46:57.106Z] - Error: Error processing row for Jumair: Invalid date format: undefined
+[INFO] [2024-09-30T12:46:57.107Z] - Successfully deleted file: D:\Jumair\Development\Backend\employee\uploads\4211ff561787709c9335a9f99c6c9f16
+[INFO] [2024-09-30T12:47:19.247Z] - Application has started.
+[INFO] [2024-09-30T12:47:20.546Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\c1aa81f70efe1428342a7b252dc3ff7c
+[INFO] [2024-09-30T12:47:20.596Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:47:26.082Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:47:30.570Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:47:31.722Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:48:14.442Z] - Retrieved 4 employees
+[INFO] [2024-09-30T12:48:15.310Z] - Exported to Excel: employees-above-70000.xlsx
+[INFO] [2024-09-30T12:48:38.997Z] - Application has started.
+[INFO] [2024-09-30T12:48:45.796Z] - Application has started.
+[INFO] [2024-09-30T12:48:48.314Z] - Exported to Excel: employees-above-70000.xlsx
+[INFO] [2024-09-30T12:49:13.988Z] - User Logged Out
+[INFO] [2024-09-30T12:49:23.421Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:49:24.535Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:25.819Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:26.400Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:27.234Z] - Retrieved 1 employees
+[INFO] [2024-09-30T12:49:32.482Z] - Deleted employee with ID: 51
+[INFO] [2024-09-30T12:49:32.489Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:32.501Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:32.519Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:35.717Z] - Deleted employee with ID: 52
+[INFO] [2024-09-30T12:49:35.724Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:35.737Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:49:35.754Z] - Retrieved 9 employees
+[INFO] [2024-09-30T12:49:38.742Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:50:26.116Z] - Application has started.
+[INFO] [2024-09-30T12:50:31.124Z] - Retrieved 4 employees
+[INFO] [2024-09-30T12:50:34.515Z] - Exported to Excel: employees-above-70000.xlsx
+[INFO] [2024-09-30T12:50:44.278Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:50:49.285Z] - Login successful for user: admin
+[INFO] [2024-09-30T12:50:50.397Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:09.805Z] - Imported 4 employees from D:\Jumair\Development\Backend\employee\uploads\de1fb59a816c505076c35f083dfe19b6
+[INFO] [2024-09-30T12:51:09.817Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:12.673Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:13.738Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:13.906Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:14.222Z] - Retrieved 3 employees
+[INFO] [2024-09-30T12:51:18.929Z] - Deleted employee with ID: 56
+[INFO] [2024-09-30T12:51:18.941Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:18.973Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:19.015Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:19.056Z] - Retrieved 2 employees
+[INFO] [2024-09-30T12:51:20.953Z] - Deleted employee with ID: 55
+[INFO] [2024-09-30T12:51:20.962Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:20.990Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:21.020Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:21.054Z] - Retrieved 1 employees
+[INFO] [2024-09-30T12:51:23.094Z] - Deleted employee with ID: 54
+[INFO] [2024-09-30T12:51:23.105Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:23.141Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:23.174Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:25.016Z] - Deleted employee with ID: 53
+[INFO] [2024-09-30T12:51:25.023Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:25.044Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:25.060Z] - Retrieved 9 employees
+[INFO] [2024-09-30T12:51:33.307Z] - Deleted employee with ID: 28
+[INFO] [2024-09-30T12:51:33.315Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:33.346Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:36.712Z] - Retrieved 8 employees
+[INFO] [2024-09-30T12:51:38.945Z] - Deleted employee with ID: 32
+[INFO] [2024-09-30T12:51:38.952Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:38.995Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:51:39.031Z] - Retrieved 7 employees
+[INFO] [2024-09-30T12:51:42.192Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:52:02.867Z] - User Logged Out
+[ERROR] [2024-09-30T12:52:07.160Z] - User not found: user
+[ERROR] [2024-09-30T12:52:07.161Z] - User not found.
+[INFO] [2024-09-30T12:52:13.287Z] - Login successful for user: test
+[INFO] [2024-09-30T12:52:18.094Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:52:19.229Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:52:19.713Z] - Retrieved 7 employees
+[INFO] [2024-09-30T12:52:25.060Z] - User Logged Out
+[INFO] [2024-09-30T12:53:19.497Z] - User created: Mind Mystery
+[INFO] [2024-09-30T12:53:19.950Z] - Retrieved 10 employees
+[INFO] [2024-09-30T12:53:22.679Z] - User Logged Out
+[INFO] [2024-09-30T13:05:34.846Z] - User created: Jumair Abdul Jaleel
+[INFO] [2024-09-30T13:05:35.986Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:05:40.036Z] - User Logged Out
+[INFO] [2024-09-30T13:07:09.725Z] - Registered new user: user
+[INFO] [2024-09-30T13:07:18.844Z] - Login failed for user: user - Reason: Invalid Password
+[ERROR] [2024-09-30T13:07:18.845Z] - Incorrect password.
+[INFO] [2024-09-30T13:07:26.615Z] - Login successful for user: user
+[INFO] [2024-09-30T13:07:27.804Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:07:46.972Z] - Retrieved 9 employees
+[INFO] [2024-09-30T13:07:56.745Z] - Exported to Excel: employees-above-50000.xlsx
+[INFO] [2024-09-30T13:08:24.003Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\ac810a019a902b5288f66e163ab6118d
+[INFO] [2024-09-30T13:08:24.011Z] - Retrieved 0 employees
+[INFO] [2024-09-30T13:08:27.546Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:08:28.321Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:08:28.954Z] - Retrieved 9 employees
+[INFO] [2024-09-30T13:09:09.559Z] - Deleted employee with ID: 57
+[INFO] [2024-09-30T13:09:09.567Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:09:09.613Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:09:09.656Z] - Retrieved 8 employees
+[INFO] [2024-09-30T13:15:12.449Z] - Application has started.
+[INFO] [2024-09-30T13:15:33.173Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:15:36.395Z] - Login successful for user: admin
+[INFO] [2024-09-30T13:15:37.525Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:16:06.183Z] - Application has started.
+[INFO] [2024-09-30T13:16:08.701Z] - Imported 9 employees from D:\Jumair\Development\Backend\employee\uploads\cd50f703ad452f5c26c897cbc517f4a8
+[INFO] [2024-09-30T13:16:08.745Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:16:20.346Z] - Application has started.
+[INFO] [2024-09-30T13:16:23.362Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:16:30.569Z] - Login successful for user: admin
+[INFO] [2024-09-30T13:16:31.744Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:16:36.982Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\60c6e710eecaac3d725ed1cc73c07e67
+[INFO] [2024-09-30T13:16:36.995Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:16:58.749Z] - Application has started.
+[INFO] [2024-09-30T13:17:07.383Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\be445b1a88396030354e7ab1bbb40979
+[INFO] [2024-09-30T13:17:07.470Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:17:17.343Z] - Application has started.
+[INFO] [2024-09-30T13:17:17.587Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:17:21.427Z] - Login successful for user: admin
+[INFO] [2024-09-30T13:17:22.599Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:17:26.606Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\eb3f7cb4e31a5bbb0708c7312b2dc96e
+[INFO] [2024-09-30T13:17:26.618Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:17:56.766Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\52ec86ad64be468802b80dbe8ac5c5aa
+[INFO] [2024-09-30T13:17:56.777Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:18:05.510Z] - Application has started.
+[INFO] [2024-09-30T13:18:12.326Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\ba9d66c0996b2bbcdbf729a907f52ce0
+[INFO] [2024-09-30T13:18:12.367Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:19:28.675Z] - Application has started.
+[INFO] [2024-09-30T13:30:35.421Z] - Application has started.
+[INFO] [2024-09-30T13:30:36.074Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:40.890Z] - Login successful for user: admin
+[INFO] [2024-09-30T13:30:42.152Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:46.943Z] - Imported 2 employees from D:\Jumair\Development\Backend\employee\uploads\7f587df44733f5499d37f0ff863eac54
+[INFO] [2024-09-30T13:30:46.959Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:47.775Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:48.329Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:48.709Z] - Retrieved 9 employees
+[INFO] [2024-09-30T13:30:58.679Z] - Deleted employee with ID: 78
+[INFO] [2024-09-30T13:30:58.695Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:58.746Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:58.793Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:58.909Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:30:58.966Z] - Retrieved 8 employees
+[INFO] [2024-09-30T13:31:20.242Z] - User Logged Out
+[INFO] [2024-09-30T13:31:43.236Z] - Login successful for user: admin
+[INFO] [2024-09-30T13:31:44.439Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:31:50.192Z] - Employee details updated successfully - EmployeeId: 1
+[INFO] [2024-09-30T13:31:50.208Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:33:15.472Z] - User Logged Out
+[ERROR] [2024-09-30T13:35:59.830Z] - User already exists with username: test or email: test1@gmail.com
+[INFO] [2024-09-30T13:36:10.559Z] - Registered new user: test1
+[INFO] [2024-09-30T13:36:20.635Z] - Login successful for user: test1
+[INFO] [2024-09-30T13:36:22.470Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:36:34.018Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:36:34.863Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:36:57.776Z] - User Logged Out
+[INFO] [2024-09-30T13:37:00.350Z] - User found: Jumair Abdul Jaleel
+[INFO] [2024-09-30T13:37:00.446Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:37:49.637Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:39:12.030Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:39:28.750Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:39:30.436Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:39:32.727Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:39:34.067Z] - Retrieved 8 employees
+[INFO] [2024-09-30T13:40:01.933Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:40:17.835Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:40:18.921Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:40:22.502Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:40:24.009Z] - Retrieved 8 employees
+[INFO] [2024-09-30T13:43:49.462Z] - Retrieved 10 employees
+[INFO] [2024-09-30T13:44:52.923Z] - User Logged Out
+[INFO] [2024-09-30T13:44:58.995Z] - Retrieved 10 employees
+[INFO] [2024-10-01T08:03:23.356Z] - Application has started.
+[INFO] [2024-10-01T08:18:15.255Z] - Application has started.
+[INFO] [2024-10-01T08:18:25.042Z] - Application has started.
+[INFO] [2024-10-01T08:19:06.528Z] - Application has started.
+[ERROR] [2024-10-01T08:19:24.214Z] - User not found: admin
+[ERROR] [2024-10-01T08:19:24.214Z] - User not found.
+[INFO] [2024-10-01T08:19:35.267Z] - Registered new user: admin
+[ERROR] [2024-10-01T08:19:35.762Z] - User already exists with username: admin or email: admin@gmail.com
+[INFO] [2024-10-01T08:19:41.840Z] - Login successful for user: admin
+[INFO] [2024-10-01T08:19:45.601Z] - Retrieved 10 employees

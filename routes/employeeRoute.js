@@ -65,7 +65,7 @@ router.put('/:id', async (req, res) => {
             logError(`Failed to update employee with ID: ${id}`);
             return res.status(404).json({ message: 'Employee not found' });
         }
-        logInfo(`Updated employee with ID: ${id}`);
+        logInfo(`Employee details updated successfully - EmployeeId: ${id}`);
         res.json({ id, name, salary, dob });
     }
     catch (error) {

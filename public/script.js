@@ -212,6 +212,8 @@ employeeForm.onsubmit = (e) => {
                 showToast('Employee updated successfully!', 'success');
             });
     } else {
+        if(employee.name && employee.dob && employee.salary){
+            console.log('first')
         fetch('/api/employees', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -224,6 +226,7 @@ employeeForm.onsubmit = (e) => {
                 closeModal();
                 showToast('Employee added successfully!','success');
             });
+        }
     }
 };
 
@@ -317,7 +320,7 @@ employeeForm.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            showToast('Employees added successfully!');
+            showToast('Employees added successfully!','success');
             modal.style.display = 'none';
             fetchEmployees();
         } else {

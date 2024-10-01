@@ -234,7 +234,7 @@
                     showToast(result.message, 'success');
                     setTimeout(() => {
                         window.location.href = result.redirectUrl;
-                    },2000)
+                    },1000)
                 } else {
                     showToast(result.message, 'error');
                 }
@@ -243,13 +243,14 @@
             }
         });
 
-        // Add event listener for Active Directory login
+       
         document.getElementById('adLoginBtn').addEventListener('click', async () => {
             const username = document.querySelector('input[name="username"]').value;
             const password = document.querySelector('input[name="password"]').value;
 
             if (!username || !password) {
-                showToast('Please enter both username and password', 'error');
+                // showToast('Please enter both username and password', 'error');
+                showToast('An error occurred during Active Directory login', 'error')
                 return;
             }
 

@@ -35,6 +35,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', loginRoute)
 app.use('/api/employees', employeeRoute)
 
+  
 app.listen(3000, () => {
     console.log('Server is running')
     logInfo('Application has started.');
@@ -51,7 +52,7 @@ const logFilePath = path.join(logDir, 'app.log');
 
 function writeLog(level, message) {
     const timestamp = new Date().toISOString();
-    const logMessage = `${timestamp} [${level.toUpperCase()}]: ${message}\n`;
+    const logMessage = `[${level.toUpperCase()}] [${timestamp}] - ${message}\n`;
     fs.appendFileSync(logFilePath, logMessage, { encoding: 'utf8' });
 }
 
